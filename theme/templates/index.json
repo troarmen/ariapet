@@ -9,14 +9,14 @@
  */
 {
   "sections": {
-    "hero_abertura": {
+    "hero_campanha": {
       "type": "hero",
+      "name": "Campanha",
       "blocks": {
         "rotulo": {
           "type": "text",
-          "name": "Rótulo",
           "settings": {
-            "text": "<p>Acessórios para pets</p>",
+            "text": "<p>Acessórios para cachorro</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -40,11 +40,10 @@
         },
         "titulo": {
           "type": "text",
-          "name": "Título",
           "settings": {
-            "text": "<p>O essencial, elevado.</p>",
+            "text": "<h1>Acessórios para pet com design autoral</h1>",
             "width": "fit-content",
-            "max_width": "normal",
+            "max_width": "narrow",
             "alignment": "left",
             "type_preset": "h1",
             "font": "var(--font-heading--family)",
@@ -58,6 +57,31 @@
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 8,
+            "padding-block-end": 8,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "subtitulo": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Coleira, peitoral, guia, porta saquinho e bandana desenhados para combinar entre si.</p>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
             "padding-block-end": 16,
             "padding-inline-start": 0,
             "padding-inline-end": 0
@@ -66,10 +90,9 @@
         },
         "cta": {
           "type": "button",
-          "name": "Botão",
           "settings": {
-            "label": "Ver a coleção",
-            "link": "shopify://collections/all",
+            "label": "Ver todos os acessórios",
+            "link": "shopify://collections/acessorios-para-cachorro",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
@@ -80,15 +103,20 @@
           "blocks": {}
         }
       },
-      "block_order": ["rotulo", "titulo", "cta"],
-      "name": "Abertura",
+      "block_order": [
+        "rotulo",
+        "titulo",
+        "subtitulo",
+        "cta"
+      ],
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/Aria7137.jpg",
+        "image_1": "shopify://shop_images/Aria7064.jpg",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
-        "custom_mobile_media": false,
+        "custom_mobile_media": true,
         "media_type_1_mobile": "image",
+        "image_1_mobile": "shopify://shop_images/campanha-aria-peitoral-e-guia-caramelo.jpg",
         "media_type_2_mobile": "image",
         "open_in_new_tab": false,
         "content_direction": "column",
@@ -113,8 +141,518 @@
         "padding-block-end": 72
       }
     },
-    "colecao_curada": {
+    "manifesto": {
+      "type": "section",
+      "name": "Manifesto",
+      "blocks": {
+        "assinatura": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Made to match.</h2>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "font_size": "",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "balance",
+            "color": "var(--color-foreground-heading)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 8,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "texto": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cada peça ARIA parte do mesmo desenho: as mesmas cores, as mesmas ferragens, o mesmo acabamento. Coleira, peitoral, guia e porta saquinho combinam entre si — em qualquer combinação que você escolher.</p>",
+            "width": "100%",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 8,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "cta": {
+          "type": "button",
+          "settings": {
+            "label": "Conheça a ARIA",
+            "link": "shopify://pages/about",
+            "open_in_new_tab": false,
+            "style_class": "link",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "assinatura",
+        "texto",
+        "cta"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-1",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 88,
+        "padding-block-end": 56
+      }
+    },
+    "editorial_marca": {
+      "type": "hero",
+      "name": "Editorial · a marca",
+      "blocks": {
+        "rotulo_marca": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A marca</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h6",
+            "font": "var(--font-subheading--family)",
+            "font_size": "0.75rem",
+            "line_height": "normal",
+            "letter_spacing": "loose",
+            "case": "uppercase",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "titulo_marca": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Desenhado para durar no seu dia a dia</h2>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-heading--family)",
+            "font_size": "",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "balance",
+            "color": "var(--color-foreground-heading)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 8,
+            "padding-block-end": 16,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "cta_marca": {
+          "type": "button",
+          "settings": {
+            "label": "Conheça a história da ARIA",
+            "link": "shopify://pages/about",
+            "open_in_new_tab": false,
+            "style_class": "button-secondary",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "rotulo_marca",
+        "titulo_marca",
+        "cta_marca"
+      ],
+      "settings": {
+        "media_type_1": "image",
+        "image_1": "shopify://shop_images/campanha-aria-wide-caramelo.jpg",
+        "media_type_2": "image",
+        "stack_media_on_mobile": false,
+        "custom_mobile_media": false,
+        "media_type_1_mobile": "image",
+        "media_type_2_mobile": "image",
+        "open_in_new_tab": false,
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 0,
+        "section_width": "page-width",
+        "section_height": "medium",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-6",
+        "toggle_overlay": true,
+        "overlay_color": "#1414144d",
+        "overlay_style": "solid",
+        "gradient_direction": "to bottom",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 72,
+        "padding-block-end": 72
+      }
+    },
+    "diferenciais": {
+      "type": "section",
+      "name": "Diferenciais",
+      "blocks": {
+        "c1": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 4,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "h": {
+              "type": "text",
+              "settings": {
+                "text": "<h3>Design autoral</h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h5",
+                "font": "var(--font-heading--family)",
+                "font_size": "",
+                "line_height": "tight",
+                "letter_spacing": "tight",
+                "case": "none",
+                "wrap": "balance",
+                "color": "var(--color-foreground-heading)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 4,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "p": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Desenho próprio, criado pela ARIA. Linhas simples e paleta neutra, pensadas para não sair de moda.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "h",
+            "p"
+          ]
+        },
+        "c2": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 4,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "h": {
+              "type": "text",
+              "settings": {
+                "text": "<h3>Peças que combinam</h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h5",
+                "font": "var(--font-heading--family)",
+                "font_size": "",
+                "line_height": "tight",
+                "letter_spacing": "tight",
+                "case": "none",
+                "wrap": "balance",
+                "color": "var(--color-foreground-heading)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 4,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "p": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Coleira, peitoral, guia e porta saquinho na mesma cor e com as mesmas ferragens, para montar o conjunto do seu jeito.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "h",
+            "p"
+          ]
+        },
+        "c3": {
+          "type": "group",
+          "settings": {
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
+            "gap": 4,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "h": {
+              "type": "text",
+              "settings": {
+                "text": "<h3>Ajuste e conforto</h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h5",
+                "font": "var(--font-heading--family)",
+                "font_size": "",
+                "line_height": "tight",
+                "letter_spacing": "tight",
+                "case": "none",
+                "wrap": "balance",
+                "color": "var(--color-foreground-heading)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 4,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "p": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Tamanhos P, M e G com regulagem no pescoço e no tórax. Veja o <a href=\"/pages/guia-de-tamanhos\">guia de tamanhos</a> antes de escolher.</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "h",
+            "p"
+          ]
+        }
+      },
+      "block_order": [
+        "c1",
+        "c2",
+        "c3"
+      ],
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "flex-start",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-1",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 88
+      }
+    },
+    "essencial": {
       "type": "product-list",
+      "name": "A coleção essencial",
       "blocks": {
         "static-header": {
           "type": "_product-list-content",
@@ -154,7 +692,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>A coleção</h3>",
+                "text": "<h2>A coleção essencial</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -180,7 +718,7 @@
               "type": "_product-list-button",
               "name": "t:names.product_list_button",
               "settings": {
-                "label": "Ver tudo",
+                "label": "Ver todos os acessórios",
                 "open_in_new_tab": false,
                 "style_class": "link",
                 "width": "fit-content",
@@ -191,7 +729,10 @@
               "blocks": {}
             }
           },
-          "block_order": ["titulo_lista", "link_lista"]
+          "block_order": [
+            "titulo_lista",
+            "link_lista"
+          ]
         },
         "static-product-card": {
           "type": "_product-card",
@@ -276,16 +817,19 @@
               "blocks": {}
             }
           },
-          "block_order": ["card_galeria", "card_titulo", "card_preco"]
+          "block_order": [
+            "card_galeria",
+            "card_titulo",
+            "card_preco"
+          ]
         }
       },
-      "name": "A coleção",
       "settings": {
-        "collection": "frontpage",
+        "collection": "acessorios-para-cachorro",
         "layout_type": "grid",
         "carousel_on_mobile": false,
-        "max_products": 4,
-        "columns": 4,
+        "max_products": 5,
+        "columns": 5,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
         "columns_gap": 16,
@@ -296,48 +840,22 @@
         "horizontal_alignment": "flex-start",
         "gap": 40,
         "color_scheme": "scheme-1",
-        "padding-block-start": 88,
-        "padding-block-end": 88
+        "padding-block-start": 24,
+        "padding-block-end": 24
       }
     },
-    "editorial_marca": {
-      "type": "hero",
+    "galeria": {
+      "type": "section",
+      "name": "A ARIA em uso",
       "blocks": {
-        "rotulo_marca": {
+        "titulo_galeria": {
           "type": "text",
-          "name": "Rótulo",
           "settings": {
-            "text": "<p>A marca</p>",
+            "text": "<h2>A ARIA em uso</h2>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
-            "type_preset": "h6",
-            "font": "var(--font-subheading--family)",
-            "font_size": "0.75rem",
-            "line_height": "normal",
-            "letter_spacing": "loose",
-            "case": "uppercase",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "titulo_marca": {
-          "type": "text",
-          "name": "Título",
-          "settings": {
-            "text": "<p>Design autoral, para o passeio de todo dia.</p>",
-            "width": "fit-content",
-            "max_width": "narrow",
-            "alignment": "left",
-            "type_preset": "h2",
+            "type_preset": "h3",
             "font": "var(--font-heading--family)",
             "font_size": "",
             "line_height": "tight",
@@ -348,40 +866,147 @@
             "background": false,
             "background_color": "#00000026",
             "corner_radius": 0,
-            "padding-block-start": 8,
-            "padding-block-end": 16,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {}
         },
-        "cta_marca": {
-          "type": "button",
-          "name": "Botão",
+        "fotos": {
+          "type": "group",
           "settings": {
-            "label": "Nossa história",
-            "link": "/pages/about",
-            "open_in_new_tab": false,
-            "style_class": "button-secondary",
-            "width": "fit-content",
+            "content_direction": "row",
+            "vertical_on_mobile": false,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-start",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
             "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
-          "blocks": {}
+          "blocks": {
+            "f1": {
+              "type": "image",
+              "settings": {
+                "image": "shopify://shop_images/campanha-aria-peitoral-e-guia-caramelo.jpg",
+                "link": "",
+                "image_ratio": "portrait",
+                "width": "custom",
+                "custom_width": 24,
+                "width_mobile": "custom",
+                "custom_width_mobile": 48,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "f2": {
+              "type": "image",
+              "settings": {
+                "image": "shopify://shop_images/conjunto-aria-peitoral-guia-porta-saquinho-marrom.jpg",
+                "link": "",
+                "image_ratio": "portrait",
+                "width": "custom",
+                "custom_width": 24,
+                "width_mobile": "custom",
+                "custom_width_mobile": 48,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "f3": {
+              "type": "image",
+              "settings": {
+                "image": "shopify://shop_images/peitoral-cachorro-aria-off-white-detalhe.jpg",
+                "link": "",
+                "image_ratio": "portrait",
+                "width": "custom",
+                "custom_width": 24,
+                "width_mobile": "custom",
+                "custom_width_mobile": 48,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "f4": {
+              "type": "image",
+              "settings": {
+                "image": "shopify://shop_images/porta-saquinho-aria-preto-na-coleira.jpg",
+                "link": "",
+                "image_ratio": "portrait",
+                "width": "custom",
+                "custom_width": 24,
+                "width_mobile": "custom",
+                "custom_width_mobile": 48,
+                "height": "fit",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "f1",
+            "f2",
+            "f3",
+            "f4"
+          ]
         }
       },
-      "block_order": ["rotulo_marca", "titulo_marca", "cta_marca"],
-      "name": "Editorial · marca",
+      "block_order": [
+        "titulo_galeria",
+        "fotos"
+      ],
       "settings": {
-        "media_type_1": "image",
-        "image_1": "shopify://shop_images/Aria7097.jpg",
-        "media_type_2": "image",
-        "stack_media_on_mobile": false,
-        "custom_mobile_media": false,
-        "media_type_1_mobile": "image",
-        "media_type_2_mobile": "image",
-        "open_in_new_tab": false,
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
@@ -389,27 +1014,32 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 0,
+        "gap": 24,
         "section_width": "page-width",
-        "section_height": "medium",
+        "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-6",
-        "toggle_overlay": true,
-        "overlay_color": "#1414144d",
+        "color_scheme": "scheme-1",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
         "overlay_style": "solid",
-        "gradient_direction": "to bottom",
-        "blurred_reflection": false,
-        "reflection_opacity": 75,
-        "padding-block-start": 72,
-        "padding-block-end": 72
+        "gradient_direction": "to top",
+        "padding-block-start": 88,
+        "padding-block-end": 88
       }
     },
     "editorial_tamanhos": {
       "type": "hero",
+      "name": "Editorial · tamanhos",
       "blocks": {
         "rotulo_tam": {
           "type": "text",
-          "name": "Rótulo",
           "settings": {
             "text": "<p>Antes de comprar</p>",
             "width": "fit-content",
@@ -435,9 +1065,8 @@
         },
         "titulo_tam": {
           "type": "text",
-          "name": "Título",
           "settings": {
-            "text": "<p>Encontre o tamanho certo.</p>",
+            "text": "<h2>Encontre o tamanho certo de coleira e peitoral</h2>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "center",
@@ -461,10 +1090,9 @@
         },
         "cta_tam": {
           "type": "button",
-          "name": "Botão",
           "settings": {
-            "label": "Guia de tamanhos",
-            "link": "/pages/guia-de-tamanhos",
+            "label": "Ver o guia de tamanhos",
+            "link": "shopify://pages/guia-de-tamanhos",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
@@ -475,11 +1103,14 @@
           "blocks": {}
         }
       },
-      "block_order": ["rotulo_tam", "titulo_tam", "cta_tam"],
-      "name": "Editorial · tamanhos",
+      "block_order": [
+        "rotulo_tam",
+        "titulo_tam",
+        "cta_tam"
+      ],
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/Aria8046.jpg",
+        "image_1": "shopify://shop_images/conjunto-aria-wide-caramelo.jpg",
         "media_type_2": "image",
         "stack_media_on_mobile": false,
         "custom_mobile_media": false,
@@ -504,15 +1135,80 @@
         "gradient_direction": "to bottom",
         "blurred_reflection": false,
         "reflection_opacity": 75,
-        "padding-block-start": 72,
+        "padding-block-start": 0,
+        "padding-block-end": 72
+      }
+    },
+    "beneficios": {
+      "type": "section",
+      "name": "Benefícios",
+      "blocks": {
+        "texto_beneficios": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/pages/troca-e-devolucao\">Troca em até 7 dias</a> após o recebimento &middot; Frete calculado no checkout &middot; Pagamento em ambiente seguro</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "0.8125rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "texto_beneficios"
+      ],
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 0,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-1",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
         "padding-block-end": 72
       }
     }
   },
   "order": [
-    "hero_abertura",
-    "colecao_curada",
+    "hero_campanha",
+    "manifesto",
+    "essencial",
+    "beneficios",
+    "diferenciais",
     "editorial_marca",
+    "galeria",
     "editorial_tamanhos"
   ]
 }

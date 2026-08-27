@@ -30,12 +30,19 @@
     {%- render 'scripts' -%}
     {%- render 'theme-styles-variables' -%}
     {%- render 'color-schemes' -%}
+    {%- render 'hero-art-direction' -%}
 
     {% if request.design_mode %}
       {%- render 'theme-editor' -%}
     {% endif %}
 
     {{ content_for_header }}
+
+    {%- comment -%}
+      GoodySEO: structured data (schema.org). Renderizado depois de
+      content_for_header para não conflitar com o bloco Organization nativo.
+    {%- endcomment -%}
+    {%- render 'structured-data' -%}
   </head>
 
   <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }}">
@@ -111,6 +118,15 @@
         }
       })();
     </script>
+
+    {%- comment -%}
+      GoodySEO: trilha de navegação (UX + BreadcrumbList).
+      Fica FORA de <main> de propósito: várias regras do tema dependem de
+      `main > .shopify-section:first-child` e `main > .section-wrapper:first-child`
+      (offset do header transparente e altura do hero). Um elemento extra dentro
+      de <main> quebraria esses seletores.
+    {%- endcomment -%}
+    {% render 'breadcrumbs' %}
 
     <main
       id="MainContent"

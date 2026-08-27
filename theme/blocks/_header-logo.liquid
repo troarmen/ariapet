@@ -20,7 +20,23 @@
     endif
   endif
 
-  assign alt_text_fallback = shop.name | escape | append: ' ' | append: 'accessibility.home' | t
+  comment
+    ARIA / GoodySEO: o código original era
+      assign alt_text_fallback = shop.name | escape | append: ' ' | append: 'accessibility.home' | t
+    O filtro `t` era aplicado à string inteira (nome da loja + chave), o que gerava
+    o alt "Translation missing: pt-BR.Aria Pet &amp; co accessibility.home" no logo
+    em todas as páginas. Agora a chave é traduzida primeiro e só depois concatenada,
+    com fallback para o nome da loja caso a chave não exista no idioma.
+    O `escape` foi removido porque shop.name já chega escapado e o image_tag escapa
+    o alt novamente (gerava &amp;amp;).
+  endcomment
+  assign shop_name_plain = shop.name | replace: '&amp;', '&'
+  assign home_label = 'accessibility.home' | t
+  if home_label contains 'Translation missing'
+    assign alt_text_fallback = shop_name_plain
+  else
+    assign alt_text_fallback = shop_name_plain | append: ' — ' | append: home_label
+  endif
 %}
 
 {% comment %}

@@ -13,6 +13,10 @@
 
 {% liquid
   assign block_settings = block.settings
+  assign heading_tag = 'h1'
+  if force_empty
+    assign heading_tag = 'h2'
+  endif
 %}
 
 <div
@@ -20,18 +24,18 @@
   style="{% render 'spacing-style', settings: block_settings %}"
   {{ block.shopify_attributes }}
 >
-  <h1 class="{{ block_settings.type_preset | default: 'h2' }}">
+  <{{ heading_tag }} class="{{ block_settings.type_preset | default: 'h2' }}">
     {%- if cart.empty? or force_empty -%}
       {{ 'content.your_cart_is_empty' | t }}
     {%- else -%}
       {{ block_settings.title }}
       {%- if block_settings.show_count -%}{% render 'cart-bubble' %}{%- endif -%}
     {%- endif -%}
-  </h1>
+  </{{ heading_tag }}>
 </div>
 
 {% stylesheet %}
-  .cart-title h1 {
+  .cart-title :is(h1, h2) {
     margin-block-end: 0;
     display: inline-flex;
     align-items: center;

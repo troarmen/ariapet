@@ -1,6 +1,28 @@
 {% doc %}
   Renders all meta tags for the page including Open Graph, Twitter Cards, and SEO tags.
 
+  ARIA / GoodySEO:
+  - MARCA FIXA: o sufixo de título é sempre ' | Aria Pet & Co.', definido na
+    variável `brand` abaixo e independente de shop.name (o nome da loja no admin
+    ainda é 'Aria Pet & co'). Alterar em um lugar só.
+  - Todo template tem título E meta description próprios, inclusive os que o
+    Shopify não deixa editar no admin: busca, carrinho, lista de coleções,
+    blog, 404 e /collections/all.
+  - O título da home é 'Acessórios para Pet' e o da coleção é 'Acessórios para
+    Cachorro' de propósito: com o mesmo texto nos dois, as duas páginas
+    competiam entre si na SERP.
+  - A marca só é anexada uma vez: se o título já contiver 'aria pet', não repete.
+  - Blog sem nenhum artigo publicado recebe noindex (conteúdo raso). Assim que o
+    primeiro post entrar, o noindex sai sozinho.
+  - og:locale + og:locale:alternate por idioma publicado.
+  - og:image sempre em https, com og:image:alt.
+  - page_title e shop.name chegam JÁ escapados do Shopify (&amp;, &quot;). Por isso
+    são desescapados antes de montar o título e escapados uma única vez na saída —
+    senão o <title> sairia com &amp;amp; / &amp;quot;.
+    page_description NÃO vem escapado, por isso recebe apenas o escape final.
+
+  Para editar os textos, altere o bloco EDITAR AQUI logo abaixo.
+
   @param {object} [product] - The product object, available on product pages for price meta tags.
 {% enddoc %}
 
@@ -17,29 +39,181 @@
   name="view-transition"
   content="same-origin"
 >
-<meta
-  name="theme-color"
-  content=""
->
 
 {%- liquid
-  assign og_title = page_title | default: shop.name
+  # ===================== EDITAR AQUI =====================
+  assign brand = 'Aria Pet & Co.'
+  assign seo_iso = request.locale.iso_code | downcase
+
+  if seo_iso == 'en'
+    assign t_home = 'Designer Dog Collars, Leashes & Harnesses'
+    assign d_home = 'Minimalist dog collars, leashes, harnesses and silk bandanas designed in Brazil. Considered pieces for the everyday walk, in sizes S, M and L.'
+
+    assign t_search = 'Search Dog Accessories'
+    assign d_search = 'Search the ARIA catalogue for collars, leashes, harnesses, poop bag holders and bandanas, and find the right piece for your dog.'
+    assign t_search_prefix = 'Results for '
+    assign d_search_prefix = 'ARIA products and pages matching '
+    assign d_search_suffix = '. Refine your search or browse all dog accessories.'
+
+    assign t_cart = 'Your Cart'
+    assign d_cart = 'Review the dog accessories you picked and check out securely on the ARIA store.'
+
+    assign t_list = 'All Collections'
+    assign d_list = 'Browse every ARIA collection of dog accessories: collars, leashes, harnesses, poop bag holders and bandanas.'
+
+    assign t_all = 'All Dog Accessories'
+    assign d_all = 'The full ARIA catalogue: dog collars, leashes, harnesses, poop bag holders and bandanas with a considered design and a premium finish.'
+
+    assign d_blog = 'News, how-to guides and care tips for ARIA dog accessories: collars, leashes, harnesses and bandanas for the everyday walk.'
+
+    assign t_404 = 'Page Not Found'
+    assign d_404 = 'The page you were looking for does not exist or has moved. Browse the ARIA dog accessories or use the search.'
+  else
+    assign t_home = 'Acessórios para Pet com Design Autoral'
+    assign d_home = 'Coleira, guia, peitoral e bandana para cachorro com design minimalista e acabamento premium. Peças para o passeio de todo dia, nos tamanhos P, M e G.'
+
+    assign t_search = 'Buscar Acessórios para Cachorro'
+    assign d_search = 'Busque coleira, guia, peitoral, porta saquinho e bandana no catálogo da ARIA e encontre a peça certa para o passeio do seu cachorro.'
+    assign t_search_prefix = 'Resultados para '
+    assign d_search_prefix = 'Produtos e páginas da ARIA que correspondem a '
+    assign d_search_suffix = '. Refine a busca ou veja todos os acessórios para cachorro.'
+
+    assign t_cart = 'Seu Carrinho'
+    assign d_cart = 'Revise os acessórios para cachorro que você escolheu e finalize o pedido com segurança na loja da ARIA.'
+
+    assign t_list = 'Todas as Coleções'
+    assign d_list = 'Navegue por todas as coleções de acessórios para cachorro da ARIA: coleira, guia, peitoral, porta saquinho e bandana.'
+
+    assign t_all = 'Todos os Acessórios para Cachorro'
+    assign d_all = 'Catálogo completo da ARIA: coleira, guia, peitoral, porta saquinho e bandana para cachorro, com design autoral e acabamento premium.'
+
+    assign d_blog = 'Novidades, guias de uso e cuidados com os acessórios para cachorro da ARIA: coleira, guia, peitoral e bandana para o passeio de todo dia.'
+
+    assign t_404 = 'Página Não Encontrada'
+    assign d_404 = 'A página que você procurava não existe ou mudou de endereço. Veja os acessórios para cachorro da ARIA ou use a busca.'
+  endif
+  # =======================================================
+
+  assign shop_name = shop.name | strip | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' | replace: '&amp;', '&'
+  assign raw_title = page_title | default: shop_name | strip | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' | replace: '&amp;', '&'
+
+  assign ptype = request.page_type
+  assign seo_title = raw_title
+  assign seo_description = page_description
+  assign seo_robots = ''
+
+  if ptype == 'index'
+    assign seo_title = t_home
+    if seo_description == blank
+      assign seo_description = d_home
+    endif
+
+  elsif ptype == 'search'
+    assign search_terms = search.terms | strip
+    if search_terms != blank
+      assign quoted = '"' | append: search_terms | append: '"'
+      assign seo_title = t_search_prefix | append: quoted
+      assign seo_description = d_search_prefix | append: quoted | append: d_search_suffix
+    else
+      assign seo_title = t_search
+      assign seo_description = d_search
+    endif
+    assign seo_robots = 'noindex, follow'
+
+  elsif ptype == 'cart'
+    assign seo_title = t_cart
+    assign seo_description = d_cart
+
+  elsif ptype == 'list-collections'
+    assign seo_title = t_list
+    assign seo_description = d_list
+
+  elsif ptype == '404'
+    assign seo_title = t_404
+    assign seo_description = d_404
+
+  elsif ptype == 'blog'
+    if seo_description == blank
+      assign seo_description = d_blog
+    endif
+    if blog.articles_count == 0
+      assign seo_robots = 'noindex, follow'
+    endif
+
+  elsif ptype == 'collection'
+    if collection.handle == 'all'
+      assign seo_title = t_all
+      assign seo_description = d_all
+    endif
+    if seo_description == blank
+      assign seo_description = collection.description | strip_html | strip | truncate: 155
+    endif
+
+  elsif ptype == 'product'
+    if seo_description == blank
+      assign seo_description = product.description | strip_html | strip | truncate: 155
+    endif
+
+  elsif ptype == 'article'
+    if seo_description == blank
+      assign seo_description = article.excerpt_or_content | strip_html | strip | truncate: 155
+    endif
+  endif
+
+  if current_tags
+    assign tag_list = current_tags | join: ', '
+    assign seo_title = seo_title | append: ' – ' | append: tag_list
+  endif
+  if current_page != 1
+    assign seo_title = seo_title | append: ' – ' | append: current_page
+  endif
+
+  assign title_probe = seo_title | downcase
+  unless title_probe contains 'aria pet'
+    assign seo_title = seo_title | append: ' | ' | append: brand
+  endunless
+
+  assign og_title = seo_title
   assign og_url = canonical_url | default: request.origin
   assign og_type = 'website'
-  assign og_description = page_description | default: shop.description | default: shop.name
+  assign og_description = seo_description | default: shop.description | default: brand
 
-  if request.page_type == 'product'
+  if ptype == 'product'
     assign og_type = 'product'
-  elsif request.page_type == 'article'
+  elsif ptype == 'article'
     assign og_type = 'article'
-  elsif request.page_type == 'password'
+  elsif ptype == 'password'
     assign og_url = request.origin
   endif
-%}
+
+  assign og_image = page_image | default: settings.logo
+  assign og_image_alt = og_image.alt | default: seo_title
+-%}
+
+<title>{{ seo_title | escape }}</title>
+
+<link
+  rel="canonical"
+  href="{{ canonical_url }}"
+>
+
+{%- if seo_description != blank %}
+  <meta
+    name="description"
+    content="{{ seo_description | escape }}"
+  >
+{%- endif %}
+
+{%- if seo_robots != blank %}
+  <meta
+    name="robots"
+    content="{{ seo_robots }}"
+  >
+{%- endif %}
 
 <meta
   property="og:site_name"
-  content="{{ shop.name }}"
+  content="{{ brand | escape }}"
 >
 <meta
   property="og:url"
@@ -57,27 +231,45 @@
   property="og:description"
   content="{{ og_description | escape }}"
 >
+<meta
+  property="og:locale"
+  content="{{ request.locale.iso_code | replace: '-', '_' }}"
+>
+{%- for shop_locale in shop.published_locales -%}
+  {%- unless shop_locale.iso_code == request.locale.iso_code -%}
+    <meta
+      property="og:locale:alternate"
+      content="{{ shop_locale.iso_code | replace: '-', '_' }}"
+    >
+  {%- endunless -%}
+{%- endfor -%}
 
-{%- if page_image -%}
+{%- if og_image != blank -%}
   <meta
     property="og:image"
-    content="http:{{ page_image | image_url }}"
+    content="https:{{ og_image | image_url: width: 1200 }}"
   >
   <meta
     property="og:image:secure_url"
-    content="https:{{ page_image | image_url }}"
+    content="https:{{ og_image | image_url: width: 1200 }}"
   >
   <meta
-    property="og:image:width"
-    content="{{ page_image.width }}"
+    property="og:image:alt"
+    content="{{ og_image_alt | escape }}"
   >
-  <meta
-    property="og:image:height"
-    content="{{ page_image.height }}"
-  >
+  {%- if page_image -%}
+    <meta
+      property="og:image:width"
+      content="{{ page_image.width }}"
+    >
+    <meta
+      property="og:image:height"
+      content="{{ page_image.height }}"
+    >
+  {%- endif -%}
 {%- endif -%}
 
-{%- if request.page_type == 'product' -%}
+{%- if ptype == 'product' -%}
   <meta
     property="og:price:amount"
     content="{{ product.price | money_without_currency | strip_html }}"
@@ -85,6 +277,10 @@
   <meta
     property="og:price:currency"
     content="{{ cart.currency.iso_code }}"
+  >
+  <meta
+    property="product:availability"
+    content="{% if product.available %}in stock{% else %}out of stock{% endif %}"
   >
 {%- endif -%}
 
@@ -106,22 +302,13 @@
   name="twitter:description"
   content="{{ og_description | escape }}"
 >
-
-<title>
-  {{ page_title }}
-  {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
-  {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
-  {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
-</title>
-
-<link
-  rel="canonical"
-  href="{{ canonical_url }}"
->
-
-{% if page_description %}
+{%- if og_image != blank -%}
   <meta
-    name="description"
-    content="{{ page_description | escape }}"
+    name="twitter:image"
+    content="https:{{ og_image | image_url: width: 1200 }}"
   >
-{% endif %}
+  <meta
+    name="twitter:image:alt"
+    content="{{ og_image_alt | escape }}"
+  >
+{%- endif -%}

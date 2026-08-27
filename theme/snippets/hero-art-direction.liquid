@@ -1,0 +1,96 @@
+{% doc %}
+  ARIA / GoodySEO — Art direction do enquadramento dos heros.
+
+  Problema resolvido: as seções "hero" usam object-fit: cover com
+  object-position: center center fixo. Como a moldura é full-bleed e a altura é
+  definida em svh, a proporção muda muito conforme a janela — numa janela baixa
+  e larga a faixa passa de 3:1 e o corte central engole o assunto da foto
+  (no banner de abertura, os rostos sumiam e sobrava só a bandana).
+
+  Duas correções aqui:
+  1. Ancoragem do corte por seção e por breakpoint (--aria-hero-pos).
+  2. Piso de altura em vw, para a faixa nunca ficar achatada demais.
+     O piso só age em janelas baixas: em telas de altura normal o valor de svh
+     do tema continua vencendo, então o layout atual não muda.
+
+  Regras:
+  - Continua usando cover (sem distorção, sem faixa vazia).
+  - Se a imagem tiver focal point definido no Files/editor, o image_tag injeta
+    object-position inline e ele prevalece sobre estas regras (comportamento
+    nativo do Shopify preservado).
+  - Para ajustar: altere apenas os percentuais abaixo (eixo X% Y%).
+
+  ATENÇÃO AO RENOMEAR SEÇÕES: os seletores abaixo dependem da CHAVE da seção em
+  `templates/index.json` (o tema renderiza `id="Hero-{{ section.id }}"`). Se a
+  chave mudar, a regra deixa de casar e o corte volta ao padrão 50% 50% sem
+  nenhum aviso — foi o que aconteceu quando `hero_abertura` virou
+  `hero_campanha`. Ao renomear uma seção, renomeie o seletor junto.
+{% enddoc %}
+
+<style>
+  /* Especificidade (0,2,0) para vencer a regra base do tema
+     independentemente da ordem de carregamento das folhas de estilo. */
+  .hero .hero__media {
+    object-position: var(--aria-hero-pos, 50% 50%);
+  }
+
+  /* ---------- Mobile (padrão, mobile-first) ---------- */
+  /* Campanha (primeira dobra): no mobile o <picture> serve o asset retrato
+     `campanha-aria-peitoral-e-guia-caramelo`, onde o corte central já preserva
+     os dois assuntos.
+     `hero_abertura` é a chave antiga da mesma seção, mantida como apelido para
+     a regra não morrer se a seção for renomeada de volta no editor. */
+  #Hero-hero_campanha,
+  #Hero-hero_abertura {
+    --aria-hero-pos: 50% 50%;
+  }
+
+  /* Editorial "A marca": retrato P&B. Assunto (cão + rosto) no terço superior. */
+  #Hero-editorial_marca {
+    --aria-hero-pos: 50% 35%;
+  }
+
+  /* Editorial "Tamanhos": retrato com a coleira no terço superior. */
+  #Hero-editorial_tamanhos {
+    --aria-hero-pos: 50% 30%;
+  }
+
+  /* ---------- Desktop / tablet ---------- */
+  @media screen and (min-width: 750px) {
+    /* Campanha: asset landscape (art direction via <picture>).
+       22% mantém os dois rostos no enquadramento mesmo quando a faixa fica
+       mais achatada do que o previsto. */
+    #Hero-hero_campanha,
+    #Hero-hero_abertura {
+      --aria-hero-pos: 50% 22%;
+      min-height: max(
+        calc(var(--hero-min-height) - var(--hero-height-offset)),
+        min(38vw, 80svh)
+      );
+    }
+
+    /* Retrato em faixa larga: pouca altura da foto fica visível,
+       então a ancoragem precisa cair exatamente sobre o assunto. */
+    #Hero-editorial_marca {
+      --aria-hero-pos: 50% 26%;
+      min-height: max(
+        calc(var(--hero-min-height) - var(--hero-height-offset)),
+        min(26vw, 55svh)
+      );
+    }
+
+    #Hero-editorial_tamanhos {
+      --aria-hero-pos: 50% 32%;
+      min-height: max(
+        calc(var(--hero-min-height) - var(--hero-height-offset)),
+        min(26vw, 55svh)
+      );
+    }
+  }
+
+  /* A reflexão desfocada (quando ativa) segue o mesmo enquadramento
+     para não criar um "fantasma" deslocado atrás da imagem. */
+  .hero .hero__blurred-image img {
+    object-position: var(--aria-hero-pos, 50% 50%);
+  }
+</style>

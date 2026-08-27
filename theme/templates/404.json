@@ -15,7 +15,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<h1>Page not found</h1>",
+            "text": "<h1>Página não encontrada</h1>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -41,7 +41,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>The link may be incorrect, or the page has been removed. </p>",
+            "text": "<p>O link pode estar incorreto ou a página pode ter saído do ar.</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -67,8 +67,8 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "Continue shopping",
-            "link": "shopify://collections/all",
+            "label": "Ver todos os acessórios",
+            "link": "shopify://collections/acessorios-para-cachorro",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
@@ -136,7 +136,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>Discover something new</p>",
+                "text": "<p>A coleção essencial</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -185,7 +185,7 @@
               "type": "_product-card-gallery",
               "name": "t:names.product_card_media",
               "settings": {
-                "image_ratio": "adapt",
+                "image_ratio": "portrait",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,
@@ -253,9 +253,9 @@
           ]
         }
       },
-      "name": "Featured collection",
+      "name": "A coleção essencial",
       "settings": {
-        "collection": "all",
+        "collection": "acessorios-para-cachorro",
         "layout_type": "grid",
         "carousel_on_mobile": false,
         "max_products": 4,

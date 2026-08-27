@@ -1,0 +1,131 @@
+{% doc %}
+  ARIA / GoodySEO — Breadcrumb visível.
+
+  Renderiza uma trilha discreta em produto, coleção, página, blog e artigo.
+  Não aparece na home, carrinho, busca, 404 e área do cliente.
+
+  Alinhamento: neste tema a classe .page-width é apenas `grid-column: 2 / 3`,
+  ou seja, só funciona dentro do grid de uma .section. Como este bloco fica fora
+  desse grid, o alinhamento é feito com as próprias variáveis do tema
+  (--page-width e --page-margin), reproduzindo exatamente a coluna de conteúdo
+  das seções. Não usa cores nem fontes novas.
+{% enddoc %}
+
+{%- liquid
+  assign bc_iso = request.locale.iso_code | downcase
+  if bc_iso == 'en'
+    assign bc_home = 'Home'
+    assign bc_label = 'Breadcrumb'
+  else
+    assign bc_home = 'Início'
+    assign bc_label = 'Você está aqui'
+  endif
+
+  assign show_breadcrumb = false
+  assign bc_types = 'product,collection,page,article,blog' | split: ','
+  for bc_type in bc_types
+    if request.page_type == bc_type
+      assign show_breadcrumb = true
+    endif
+  endfor
+
+  assign parent_collection = collection
+  if parent_collection.handle == blank
+    assign parent_collection = product.collections.first
+  endif
+-%}
+
+{%- if show_breadcrumb -%}
+  <nav
+    class="aria-breadcrumb"
+    aria-label="{{ bc_label | escape }}"
+  >
+    <ol class="aria-breadcrumb__list">
+      <li class="aria-breadcrumb__item">
+        <a href="{{ routes.root_url }}">{{ bc_home }}</a>
+      </li>
+
+      {%- case request.page_type -%}
+        {%- when 'product' -%}
+          {%- if parent_collection.handle != blank -%}
+            <li class="aria-breadcrumb__item">
+              <a href="{{ parent_collection.url }}">{{ parent_collection.title }}</a>
+            </li>
+          {%- endif -%}
+          <li class="aria-breadcrumb__item" aria-current="page">{{ product.title }}</li>
+
+        {%- when 'collection' -%}
+          <li class="aria-breadcrumb__item" aria-current="page">{{ collection.title }}</li>
+
+        {%- when 'page' -%}
+          <li class="aria-breadcrumb__item" aria-current="page">{{ page.title }}</li>
+
+        {%- when 'blog' -%}
+          <li class="aria-breadcrumb__item" aria-current="page">{{ blog.title }}</li>
+
+        {%- when 'article' -%}
+          <li class="aria-breadcrumb__item">
+            <a href="{{ blog.url }}">{{ blog.title }}</a>
+          </li>
+          <li class="aria-breadcrumb__item" aria-current="page">{{ article.title }}</li>
+      {%- endcase -%}
+    </ol>
+  </nav>
+
+  <style>
+    .aria-breadcrumb {
+      box-sizing: border-box;
+      width: 100%;
+      max-width: var(--page-width, 100%);
+      margin-inline: auto;
+      padding-inline: var(--page-margin, 1.5rem);
+      padding-block: 20px 0;
+      font-family: var(--font-subheading--family, inherit);
+      font-size: 0.6875rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-foreground);
+      opacity: 0.65;
+    }
+
+    .aria-breadcrumb__list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0 8px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .aria-breadcrumb__item {
+      display: inline-flex;
+      align-items: center;
+      max-width: 100%;
+      min-width: 0;
+    }
+
+    .aria-breadcrumb__item + .aria-breadcrumb__item::before {
+      content: '/';
+      margin-inline-end: 8px;
+      opacity: 0.5;
+    }
+
+    .aria-breadcrumb__item[aria-current='page'] {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .aria-breadcrumb a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .aria-breadcrumb a:hover,
+    .aria-breadcrumb a:focus-visible {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+  </style>
+{%- endif -%}

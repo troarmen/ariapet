@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "main": {
       "type": "product-information",
@@ -49,7 +50,7 @@
             "custom_width_mobile": 100,
             "height": "fit",
             "details_position": "flex-start",
-            "gap": 28,
+            "gap": 24,
             "sticky_details_desktop": true,
             "inherit_color_scheme": true,
             "color_scheme": "scheme-1",
@@ -78,7 +79,7 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
+                "gap": 8,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -183,6 +184,61 @@
               },
               "blocks": {}
             },
+            "popup_guia": {
+              "type": "popup-link",
+              "name": "Guia de tamanhos",
+              "settings": {
+                "behavior": "default",
+                "heading": "Guia de tamanhos",
+                "type_preset": "paragraph",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_guia_intro": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Use uma fita métrica flexível, com o cachorro em pé e relaxado. Se ele estiver entre dois tamanhos, opte pelo maior.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "padding-block-end": 8
+                  },
+                  "blocks": {}
+                },
+                "text_guia_medidas": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><strong>Coleira</strong></p><ul><li>P — pescoço de 28 a 38 cm, tira de 2,0 cm</li><li>M — pescoço de 34 a 50 cm, tira de 2,0 cm</li><li>G — pescoço de 42 a 62 cm, tira de 2,5 cm</li></ul><p><strong>Peitoral</strong></p><ul><li>P — pescoço de 32 a 42 cm, tórax de 38 a 58 cm, tira de 2,0 cm</li><li>M — pescoço de 40 a 50 cm, tórax de 55 a 75 cm, tira de 2,0 cm</li><li>G — pescoço de 48 a 62 cm, tórax de 70 a 85 cm, tira de 2,5 cm</li></ul><p><strong>Medida fixa</strong></p><ul><li>Guia: 230 cm de comprimento por 2,0 cm de largura</li><li>Porta saquinho: 8 cm por 5 cm</li></ul>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "padding-block-end": 8
+                  },
+                  "blocks": {}
+                },
+                "text_guia_link": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Para maior conforto, acrescente cerca de 1,5 cm às medidas de pescoço e tórax. Veja o <a href=\"/pages/guia-de-tamanhos\">guia de tamanhos completo, com o passo a passo da medição</a>.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_guia_intro",
+                "text_guia_medidas",
+                "text_guia_link"
+              ]
+            },
             "buy_buttons_eYQEYi": {
               "type": "buy-buttons",
               "settings": {
@@ -217,6 +273,32 @@
               },
               "block_order": []
             },
+            "text_beneficios": {
+              "type": "text",
+              "name": "Benefícios",
+              "settings": {
+                "text": "<p><a href=\"/pages/troca-e-devolucao\">Troca em até 7 dias</a> após o recebimento &middot; Frete calculado no checkout &middot; Pagamento em ambiente seguro</p>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "paragraph",
+                "font": "var(--font-body--family)",
+                "font_size": "0.8125rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 4,
+                "padding-block-end": 8,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "text_aEtTtq": {
               "type": "text",
               "name": "Product description",
@@ -242,14 +324,106 @@
                 "padding-inline-end": 0
               },
               "blocks": {}
+            },
+            "accordion_info": {
+              "type": "accordion",
+              "name": "Uso, cuidados e troca",
+              "settings": {
+                "icon": "plus",
+                "dividers": true,
+                "type_preset": "paragraph",
+                "inherit_color_scheme": true,
+                "color_scheme": "scheme-1",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 8,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "row_ajuste": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Como ajustar",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "text_ajuste": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>A peça precisa ficar firme, mas sem apertar: você deve conseguir passar dois dedos entre o acessório e o corpo do cachorro com folga.</p><p>Antes de cada saída, verifique se o ajuste continua correto e se os fechos estão travados. Substitua a peça caso apareça sinal de desgaste que comprometa a segurança.</p>",
+                        "width": "100%",
+                        "type_preset": "rte"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_ajuste"
+                  ]
+                },
+                "row_cuidados": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Cuidados",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "text_cuidados": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p><strong>Limpeza.</strong> Pano macio levemente umedecido; se precisar, sabão neutro. Sem alvejante, álcool, solvente ou produto abrasivo.</p><p><strong>Secagem.</strong> Naturalmente, à sombra. Sem secadora e sem fonte de calor.</p><p><strong>Conservação.</strong> Guarde em local seco e arejado. Evite contato prolongado com água salgada, cloro, areia ou lama; depois da praia ou da piscina, limpe com água doce e seque bem.</p><p><strong>Ferragens.</strong> Mantenha limpas e secas após o uso.</p><p><a href=\"/pages/cuidados\">Ver todas as instruções de cuidado</a></p>",
+                        "width": "100%",
+                        "type_preset": "rte"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_cuidados"
+                  ]
+                },
+                "row_troca": {
+                  "type": "_accordion-row",
+                  "settings": {
+                    "heading": "Troca e devolução",
+                    "open_by_default": false
+                  },
+                  "blocks": {
+                    "text_troca": {
+                      "type": "text",
+                      "settings": {
+                        "text": "<p>Você tem <strong>7 dias corridos</strong> a partir do recebimento para solicitar troca ou devolução pelo nosso atendimento.</p><p>A peça precisa voltar sem sinais de uso, com a embalagem original e todos os acessórios.</p><p><a href=\"/pages/troca-e-devolucao\">Ler a política completa de troca e devolução</a></p>",
+                        "width": "100%",
+                        "type_preset": "rte"
+                      },
+                      "blocks": {}
+                    }
+                  },
+                  "block_order": [
+                    "text_troca"
+                  ]
+                }
+              },
+              "block_order": [
+                "row_ajuste",
+                "row_cuidados",
+                "row_troca"
+              ]
             }
           },
           "block_order": [
             "group_icgrde",
             "divider_VJhene",
             "variant_picker_R3rGDr",
+            "popup_guia",
             "buy_buttons_eYQEYi",
-            "text_aEtTtq"
+            "text_beneficios",
+            "text_aEtTtq",
+            "accordion_info"
           ]
         }
       },
@@ -271,7 +445,7 @@
           "type": "text",
           "name": "t:names.header",
           "settings": {
-            "text": "<h3>You may also like </h3>",
+            "text": "<h2>Complete o conjunto</h2>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -315,7 +489,7 @@
               "type": "_product-card-gallery",
               "name": "t:names.product_card_media",
               "settings": {
-                "image_ratio": "adapt",
+                "image_ratio": "portrait",
                 "border": "none",
                 "border_width": 1,
                 "border_opacity": 100,

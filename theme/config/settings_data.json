@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "current": {
     "type_body_font": "inter_n4",
     "type_subheading_font": "inter_n4",

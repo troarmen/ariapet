@@ -1,0 +1,268 @@
+{% doc %}
+  ARIA / GoodySEO — Structured data (schema.org, JSON-LD).
+
+  Emite apenas dados que existem de fato na página:
+    - WebSite + SearchAction (home)
+    - BreadcrumbList (produto, coleção, página, artigo)
+    - Product + Offer (página de produto, uma Offer por variante real)
+    - MerchantReturnPolicy (7 dias corridos, conforme a página Troca e Devolução)
+    - CollectionPage + ItemList (página de coleção)
+    - ContactPage / AboutPage quando aplicável
+    - BlogPosting (artigo)
+
+  NÃO emite Organization: o Shopify já injeta esse bloco via content_for_header.
+  Emitir de novo criaria duplicidade/conflito.
+  NÃO emite AggregateRating/Review: a loja não possui avaliações.
+  NÃO emite returnFees nem returnMethod: a política publicada não informa quem
+  paga o frete de retorno nem o meio de devolução. Preencher seria inventar.
+
+  A descrição do WebPage usa o global `page_description` (localizado) e não o
+  metafield global.description_tag — o metafield devolve sempre o texto em pt-BR
+  e vazava português para o JSON-LD do /en/.
+{% enddoc %}
+
+{%- liquid
+  assign origin = request.origin
+  assign iso = request.locale.iso_code
+  assign iso_lower = iso | downcase
+  assign cur = cart.currency.iso_code
+
+  if iso_lower == 'en'
+    assign bc_home = 'Home'
+  else
+    assign bc_home = 'Início'
+  endif
+
+  assign parent_collection = collection
+  if parent_collection.handle == blank
+    assign parent_collection = product.collections.first
+  endif
+
+  assign return_page = pages['troca-e-devolucao']
+  if return_page == blank
+    assign return_page = pages['returns-and-exchanges']
+  endif
+
+  assign lbrace = '{'
+  assign rbrace = '}'
+  assign search_tpl = origin | append: routes.search_url | append: '?q=' | append: lbrace | append: 'search_term_string' | append: rbrace
+-%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+  {%- if request.page_type == 'index' -%}
+    {
+      "@type": "WebSite",
+      "@id": {{ origin | append: '/#website' | json }},
+      "url": {{ origin | append: routes.root_url | json }},
+      "name": {{ shop.name | replace: '&amp;', '&' | json }},
+      "inLanguage": {{ iso | json }},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": {{ search_tpl | json }}
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+  {%- endif -%}
+
+  {%- comment -%} ---------------- BreadcrumbList ---------------- {%- endcomment -%}
+  {%- assign crumb_type = request.page_type -%}
+  {%- if crumb_type == 'product' or crumb_type == 'collection' or crumb_type == 'page' or crumb_type == 'article' or crumb_type == 'blog' -%}
+    {
+      "@type": "BreadcrumbList",
+      "@id": {{ canonical_url | append: '#breadcrumb' | json }},
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": {{ bc_home | json }},
+          "item": {{ origin | append: routes.root_url | json }}
+        }
+        {%- if crumb_type == 'product' -%}
+          {%- if parent_collection.handle != blank -%}
+            ,{
+              "@type": "ListItem",
+              "position": 2,
+              "name": {{ parent_collection.title | json }},
+              "item": {{ origin | append: parent_collection.url | json }}
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": {{ product.title | json }},
+              "item": {{ canonical_url | json }}
+            }
+          {%- else -%}
+            ,{
+              "@type": "ListItem",
+              "position": 2,
+              "name": {{ product.title | json }},
+              "item": {{ canonical_url | json }}
+            }
+          {%- endif -%}
+        {%- elsif crumb_type == 'collection' -%}
+          ,{
+            "@type": "ListItem",
+            "position": 2,
+            "name": {{ collection.title | json }},
+            "item": {{ canonical_url | json }}
+          }
+        {%- elsif crumb_type == 'page' -%}
+          ,{
+            "@type": "ListItem",
+            "position": 2,
+            "name": {{ page.title | json }},
+            "item": {{ canonical_url | json }}
+          }
+        {%- elsif crumb_type == 'blog' -%}
+          ,{
+            "@type": "ListItem",
+            "position": 2,
+            "name": {{ blog.title | json }},
+            "item": {{ canonical_url | json }}
+          }
+        {%- elsif crumb_type == 'article' -%}
+          ,{
+            "@type": "ListItem",
+            "position": 2,
+            "name": {{ blog.title | json }},
+            "item": {{ origin | append: blog.url | json }}
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": {{ article.title | json }},
+            "item": {{ canonical_url | json }}
+          }
+        {%- endif -%}
+      ]
+    }
+  {%- endif -%}
+
+  {%- comment -%} ---------------- Product ---------------- {%- endcomment -%}
+  {%- if request.page_type == 'product' and product != blank -%}
+    ,{
+      "@type": "Product",
+      "@id": {{ canonical_url | append: '#product' | json }},
+      "name": {{ product.title | json }},
+      "url": {{ canonical_url | json }},
+      {%- assign product_desc = product.description | strip_html | strip -%}
+      {%- if product_desc != blank -%}
+        "description": {{ product_desc | json }},
+      {%- endif -%}
+      {%- if product.vendor != blank -%}
+        "brand": { "@type": "Brand", "name": {{ product.vendor | replace: '&amp;', '&' | json }} },
+      {%- endif -%}
+      {%- if product.selected_or_first_available_variant.sku != blank -%}
+        "sku": {{ product.selected_or_first_available_variant.sku | json }},
+      {%- endif -%}
+      {%- if product.images.size > 0 -%}
+        "image": [
+          {%- for img in product.images limit: 6 -%}
+            {{ img | image_url: width: 1600 | prepend: 'https:' | json }}
+            {%- unless forloop.last %},{% endunless -%}
+          {%- endfor -%}
+        ],
+      {%- endif -%}
+      "offers": [
+        {%- for variant in product.variants -%}
+          {
+            "@type": "Offer",
+            "url": {{ canonical_url | append: '?variant=' | append: variant.id | json }},
+            "priceCurrency": {{ cur | json }},
+            "price": {{ variant.price | divided_by: 100.0 | json }},
+            "availability": "https://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}",
+            "itemCondition": "https://schema.org/NewCondition",
+            {%- if variant.sku != blank -%}
+              "sku": {{ variant.sku | json }},
+            {%- endif -%}
+            "name": {{ variant.title | json }},
+            "hasMerchantReturnPolicy": {
+              "@type": "MerchantReturnPolicy",
+              "applicableCountry": "BR",
+              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+              "merchantReturnDays": 7{%- if return_page != blank -%},
+              "merchantReturnLink": {{ origin | append: return_page.url | json }}{%- endif -%}
+            },
+            "seller": { "@type": "Organization", "name": {{ shop.name | replace: '&amp;', '&' | json }} }
+          }{%- unless forloop.last %},{% endunless -%}
+        {%- endfor -%}
+      ]
+    }
+  {%- endif -%}
+
+  {%- comment -%} ---------------- Collection ---------------- {%- endcomment -%}
+  {%- if request.page_type == 'collection' and collection != blank -%}
+    ,{
+      "@type": "CollectionPage",
+      "@id": {{ canonical_url | append: '#collection' | json }},
+      "url": {{ canonical_url | json }},
+      "name": {{ collection.title | json }},
+      {%- assign coll_desc = collection.description | strip_html | strip -%}
+      {%- if coll_desc != blank -%}
+        "description": {{ coll_desc | json }},
+      {%- endif -%}
+      "inLanguage": {{ iso | json }},
+      "mainEntity": {
+        "@type": "ItemList",
+        "numberOfItems": {{ collection.products_count }},
+        "itemListElement": [
+          {%- for item in collection.products limit: 24 -%}
+            {
+              "@type": "ListItem",
+              "position": {{ forloop.index }},
+              "url": {{ origin | append: item.url | json }},
+              "name": {{ item.title | json }}
+            }{%- unless forloop.last %},{% endunless -%}
+          {%- endfor -%}
+        ]
+      }
+    }
+  {%- endif -%}
+
+  {%- comment -%} ---------------- Page / Article ---------------- {%- endcomment -%}
+  {%- if request.page_type == 'page' and page != blank -%}
+    {%- assign page_schema_type = 'WebPage' -%}
+    {%- if page.handle contains 'contact' -%}
+      {%- assign page_schema_type = 'ContactPage' -%}
+    {%- elsif page.handle contains 'about' or page.handle contains 'sobre' or page.handle contains 'historia' or page.handle contains 'story' -%}
+      {%- assign page_schema_type = 'AboutPage' -%}
+    {%- endif -%}
+    ,{
+      "@type": {{ page_schema_type | json }},
+      "@id": {{ canonical_url | append: '#webpage' | json }},
+      "url": {{ canonical_url | json }},
+      "name": {{ page.title | json }},
+      {%- assign page_desc = page_description | strip | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&lt;', '<' | replace: '&gt;', '>' | replace: '&amp;', '&' -%}
+      {%- if page_desc != blank -%}
+        "description": {{ page_desc | json }},
+      {%- endif -%}
+      "inLanguage": {{ iso | json }}
+    }
+  {%- endif -%}
+
+  {%- if request.page_type == 'article' and article != blank -%}
+    ,{
+      "@type": "BlogPosting",
+      "@id": {{ canonical_url | append: '#article' | json }},
+      "mainEntityOfPage": {{ canonical_url | json }},
+      "headline": {{ article.title | json }},
+      "datePublished": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%S%z' | json }},
+      "dateModified": {{ article.updated_at | default: article.published_at | date: '%Y-%m-%dT%H:%M:%S%z' | json }},
+      {%- if article.image -%}
+        "image": [{{ article.image | image_url: width: 1600 | prepend: 'https:' | json }}],
+      {%- endif -%}
+      {%- if article.author != blank -%}
+        "author": { "@type": "Person", "name": {{ article.author | json }} },
+      {%- endif -%}
+      "inLanguage": {{ iso | json }}
+    }
+  {%- endif -%}
+  ]
+}
+</script>

@@ -1,0 +1,14 @@
+{% doc %}
+  ARIA / GoodySEO — referência de textos de SEO por idioma.
+
+  ATENÇÃO: em Liquid, {% render %} cria escopo isolado — variáveis definidas
+  aqui NÃO ficam disponíveis no arquivo que chama o snippet. Por isso os textos
+  ficam inline nos consumidores:
+
+    - snippets/meta-tags.liquid      -> título e meta description da home
+    - snippets/breadcrumbs.liquid    -> rótulos da trilha
+    - snippets/structured-data.liquid -> nome do primeiro item do BreadcrumbList
+
+  Este arquivo existe apenas como documentação do padrão. Ao alterar um texto,
+  altere nos arquivos acima.
+{% enddoc %}
