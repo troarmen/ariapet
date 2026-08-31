@@ -33,10 +33,19 @@ As 49 variantes receberam o peso real em 31/08 (ver seção 4). Falta o
 **tamanho da embalagem** — a Frenet cota por peso *e* cubagem, então sem as
 dimensões a cotação continua imprecisa. **Ainda trava a homologação.**
 
-### 🔴 Estoque zerado em 3 dos 5 produtos
-Peitoral, Coleira e Porta Saquinho aparecem **esgotados** na loja desde 29/08,
-quando o rastreamento foi ligado (pré-requisito do Bling). Antes disso vendiam
-sem controle nenhum. Só Guia (250) e Bandana (155) têm saldo.
+### 🔴 Guia com 250 unidades e só 60 produzidas
+A Guia está com **100 / 100 / 50 no Preto** e zero nas outras três cores.
+O controle de produção diz **60 no total, 15 por cor**. São ~190 unidades
+vendáveis a mais do que existe, **numa loja que está no ar**. Número de teste
+que ficou. Corrigir tem prioridade sobre publicar o tema.
+
+### 🟡 Porta Saquinho ainda zerado
+Aguarda a quebra por tamanho. O controle traz 60 no total, 15 por cor, sem
+dizer como dividir entre P, M e G — mesma questão do P/M/G em produto de
+medida fixa.
+
+### 🟡 Bandana: 155 na loja, 104 no controle
+Sobram 51. Pode ser produção posterior ao documento ou saldo desatualizado.
 
 ---
 
@@ -46,7 +55,7 @@ sem controle nenhum. Só Guia (250) e Bandana (155) têm saldo.
 |---|---|---|
 | 1 | ~~CNPJ~~, razão social e endereço | Conformidade legal, rodapé |
 | 2 | ~~Peso real em gramas~~ e tamanho da embalagem | Frete, etiqueta, NF-e, homologação |
-| 3 | Estoque real das 36 variantes | 3 produtos esgotados na vitrine |
+| 3 | ~~Estoque de Coleira e Peitoral~~; falta Guia, Porta Saquinho e conferir Bandana | Guia hoje vende 250 com 60 produzidas |
 | 4 | Material, composição e ferragens | Ficha técnica na PDP (ela pediu no feedback) |
 | 5 | Confirmar parcelamento até 6x sem juros | Bate com o gateway? |
 | 6 | Porta Saquinho Preto: R$ 201 ou R$ 200? | Preço divergente nos dois sistemas |
@@ -89,6 +98,9 @@ nunca foram respondidos.
 - CNPJ no rodapé: campo "Dados legais" no bloco de copyright, preenchido com
   `CNPJ 65.911.458/0001-48` (falta razão social e endereço)
 - Tema sincronizado: 9 arquivos no ARIA v1, repositório e tema byte a byte iguais
+- **Estoque de Coleira e Peitoral** (31/08), do controle de produção:
+  25 (P) / 15 (M) / 5 (G) em cada uma das quatro cores — 180 por produto.
+  "Bege"/"Caramel" do controle = **Caramelo** no catálogo.
 - **Peso real nas 49 variantes** (31/08), medido na balança pela cliente:
 
   | Produto | P | M | G |
