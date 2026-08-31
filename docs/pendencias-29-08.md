@@ -33,16 +33,10 @@ As 49 variantes receberam o peso real em 31/08 (ver seção 4). Falta o
 **tamanho da embalagem** — a Frenet cota por peso *e* cubagem, então sem as
 dimensões a cotação continua imprecisa. **Ainda trava a homologação.**
 
-### 🔴 Guia com 250 unidades e só 60 produzidas
-A Guia está com **100 / 100 / 50 no Preto** e zero nas outras três cores.
-O controle de produção diz **60 no total, 15 por cor**. São ~190 unidades
-vendáveis a mais do que existe, **numa loja que está no ar**. Número de teste
-que ficou. Corrigir tem prioridade sobre publicar o tema.
-
-### 🟡 Porta Saquinho ainda zerado
-Aguarda a quebra por tamanho. O controle traz 60 no total, 15 por cor, sem
-dizer como dividir entre P, M e G — mesma questão do P/M/G em produto de
-medida fixa.
+### 🔴 Bling precisa ser reconciliado
+A reestruturação da Guia e do Porta Saquinho (31/08) **apagou 16 SKUs e
+renomeou 8**. O catálogo saiu de 49 para 33 SKUs. A integração casa por SKU,
+então o mapeamento no Bling está quebrado até ser refeito.
 
 ### 🟡 Bandana: 155 na loja, 104 no controle
 Sobram 51. Pode ser produção posterior ao documento ou saldo desatualizado.
@@ -55,7 +49,7 @@ Sobram 51. Pode ser produção posterior ao documento ou saldo desatualizado.
 |---|---|---|
 | 1 | ~~CNPJ~~, razão social e endereço | Conformidade legal, rodapé |
 | 2 | ~~Peso real em gramas~~ e tamanho da embalagem | Frete, etiqueta, NF-e, homologação |
-| 3 | ~~Estoque de Coleira e Peitoral~~; falta Guia, Porta Saquinho e conferir Bandana | Guia hoje vende 250 com 60 produzidas |
+| 3 | ~~Estoque~~; falta só conferir a Bandana | 155 na loja contra 104 no controle |
 | 4 | Material, composição e ferragens | Ficha técnica na PDP (ela pediu no feedback) |
 | 5 | Confirmar parcelamento até 6x sem juros | Bate com o gateway? |
 | 6 | Porta Saquinho Preto: R$ 201 ou R$ 200? | Preço divergente nos dois sistemas |
@@ -77,7 +71,7 @@ nunca foram respondidos.
 | 4 | Decidir entre frete fixo de R$ 22 e cotação Frenet | Os dois estão ativos e aparecem juntos no checkout — o cliente escolhe o menor |
 | 5 | Ligar as opções soltas ao metacampo | Coleira (Cor + Tamanho) e Guia (Tamanho); sem isso não há amostra de cor nem tradução do seletor |
 | 6 | ~~Traduzir os valores de opção para o `/en`~~ | Feito nos metaobjects (Black/Brown/Caramel, S/M/L); só aparece nos produtos do item 5 depois que forem ligados |
-| 7 | Mapear situações no Bling e ligar status + rastreio | Última etapa da integração |
+| 7 | Refazer o mapeamento no Bling, mapear situações e ligar status + rastreio | 16 SKUs apagados e 8 renomeados em 31/08 |
 | 8 | Conferir o enquadramento dos heros no preview | Percentuais do art direction nunca foram vistos rodando |
 | 9 | "Complete o conjunto" usa `related`, não complementares | Ela pediu produtos realmente complementares |
 
@@ -93,11 +87,16 @@ nunca foram respondidos.
 - Parcelamento 6x implementado (o `payment_terms` nativo não funciona no Brasil)
 - Páginas secundárias traduzidas: 404, carrinho, coleções, contato, senha
 - Regra morta de enquadramento do hero corrigida
-- **49 SKUs cadastrados** e rastreamento de estoque ativo
+- **49 SKUs cadastrados** e rastreamento de estoque ativo (hoje são 33, ver 31/08)
 - **Integração Bling ↔ Shopify concluída** — ver [ops/estoque-pre-bling.md](../ops/estoque-pre-bling.md)
 - CNPJ no rodapé: campo "Dados legais" no bloco de copyright, preenchido com
   `CNPJ 65.911.458/0001-48` (falta razão social e endereço)
 - Tema sincronizado: 9 arquivos no ARIA v1, repositório e tema byte a byte iguais
+- **Guia e Porta Saquinho viraram tamanho único** (31/08): a opção Tamanho foi
+  removida dos dois, que eram de medida fixa e tinham P/M/G sem lastro real.
+  De 12 para 4 variantes cada; SKUs perderam o sufixo (`AR-LS-BLK-S` →
+  `AR-LS-BLK`). 15 por cor, 60 em cada produto. Só foi seguro porque a loja
+  não tem nenhum pedido registrado.
 - **Estoque de Coleira e Peitoral** (31/08), do controle de produção:
   25 (P) / 15 (M) / 5 (G) em cada uma das quatro cores — 180 por produto.
   "Bege"/"Caramel" do controle = **Caramelo** no catálogo.
