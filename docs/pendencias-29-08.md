@@ -18,11 +18,18 @@ GA4, GTM, Meta Pixel e verificação do Search Console: zero ocorrências.
 Era o defeito nº 1 do diagnóstico de 11/08 e é o pilar 3 da proposta.
 Sem isso não se mede venda, não se faz remarketing e o tráfego pago fica inviável.
 
-### 🔴 Três das quatro políticas em 404
+### 🟡 Três políticas em 404 — textos prontos, falta colar
 `/policies/terms-of-service`, `/policies/refund-policy` e `/policies/shipping-policy`.
-Só a de privacidade responde. As páginas `/pages/troca-e-devolucao` e
-`/pages/cuidados` existem e têm texto — falta levar o conteúdo para as políticas
-oficiais no admin.
+Só a de privacidade responde.
+
+Os três textos estão redigidos em [docs/politicas/](politicas/). Não dá para
+criá-las por API: a Shopify só expõe a política que já existe como registro, e
+as ausentes precisam ser criadas em **Configurações → Políticas**. É colar e
+salvar.
+
+Reembolso e termos podem ir agora. **A de envio não**: falta o prazo de
+postagem, e prazo é oferta vinculante. Razão social e endereço aparecem como
+`[[ ]]` nos três.
 
 ### 🟡 Rodapé legal incompleto
 CNPJ **65.911.458/0001-48** recebido em 29/08 e já no rodapé. Faltam **razão
@@ -74,9 +81,9 @@ nunca foram respondidos.
 |---|---|---|
 | 1 | Publicar o ARIA v1 | Arquivos já subidos; falta o QA no preview e o clique no admin |
 | 2 | Instalar GA4, GTM, Meta Pixel e Search Console | Pilar 3 da proposta |
-| 3 | Preencher as 3 políticas no admin | Conteúdo já existe nas páginas |
+| 3 | Colar as 3 políticas no admin | Textos prontos em docs/politicas/; não dá por API |
 | 4 | Decidir entre frete fixo de R$ 22 e cotação Frenet | Os dois estão ativos e aparecem juntos no checkout — o cliente escolhe o menor |
-| 5 | Ligar as opções soltas ao metacampo | Coleira (Cor + Tamanho) e Guia (Tamanho); sem isso não há amostra de cor nem tradução do seletor |
+| 5 | Ligar as opções da Coleira ao metacampo | Só a Coleira sobrou — a Guia e o Porta Saquinho se resolveram ao perder o Tamanho. A API recusa (`INVALID_METAFIELD_VALUE_FOR_LINKED_OPTION`) mesmo com metaobjects válidos; fazer pelo editor de produto, em "Conectar a metacampo" |
 | 6 | ~~Traduzir os valores de opção para o `/en`~~ | Feito nos metaobjects (Black/Brown/Caramel, S/M/L); só aparece nos produtos do item 5 depois que forem ligados |
 | 7 | ~~Refazer o mapeamento no Bling~~; mapear situações e ligar status + rastreio | Remapeamento feito em 31/08; falta a última etapa da integração |
 | 8 | Conferir o enquadramento dos heros no preview | Percentuais do art direction nunca foram vistos rodando |
