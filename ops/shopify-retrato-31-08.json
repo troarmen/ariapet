@@ -1,0 +1,167 @@
+{
+  "AR-BD-AUR-OS": {
+    "peso_g": 52,
+    "saldo": 155,
+    "variant_id": "46217364766856"
+  },
+  "AR-CL-BLK-G": {
+    "peso_g": 104,
+    "saldo": 5,
+    "variant_id": "45872917053576"
+  },
+  "AR-CL-BLK-M": {
+    "peso_g": 81,
+    "saldo": 15,
+    "variant_id": "45872916922504"
+  },
+  "AR-CL-BLK-S": {
+    "peso_g": 78,
+    "saldo": 25,
+    "variant_id": "45872916791432"
+  },
+  "AR-CL-BRW-G": {
+    "peso_g": 104,
+    "saldo": 5,
+    "variant_id": "45872917020808"
+  },
+  "AR-CL-BRW-M": {
+    "peso_g": 81,
+    "saldo": 15,
+    "variant_id": "45872916889736"
+  },
+  "AR-CL-BRW-S": {
+    "peso_g": 78,
+    "saldo": 25,
+    "variant_id": "45872916758664"
+  },
+  "AR-CL-CML-G": {
+    "peso_g": 104,
+    "saldo": 5,
+    "variant_id": "45872917086344"
+  },
+  "AR-CL-CML-M": {
+    "peso_g": 81,
+    "saldo": 15,
+    "variant_id": "45872916955272"
+  },
+  "AR-CL-CML-S": {
+    "peso_g": 78,
+    "saldo": 25,
+    "variant_id": "45872916824200"
+  },
+  "AR-CL-OFF-G": {
+    "peso_g": 104,
+    "saldo": 5,
+    "variant_id": "45872916988040"
+  },
+  "AR-CL-OFF-M": {
+    "peso_g": 81,
+    "saldo": 15,
+    "variant_id": "45872916856968"
+  },
+  "AR-CL-OFF-S": {
+    "peso_g": 78,
+    "saldo": 25,
+    "variant_id": "45872916725896"
+  },
+  "AR-HN-BLK-G": {
+    "peso_g": 284,
+    "saldo": 5,
+    "variant_id": "45872485269640"
+  },
+  "AR-HN-BLK-M": {
+    "peso_g": 228,
+    "saldo": 15,
+    "variant_id": "45872485236872"
+  },
+  "AR-HN-BLK-S": {
+    "peso_g": 161,
+    "saldo": 25,
+    "variant_id": "45872485204104"
+  },
+  "AR-HN-BRW-G": {
+    "peso_g": 284,
+    "saldo": 5,
+    "variant_id": "45872485564552"
+  },
+  "AR-HN-BRW-M": {
+    "peso_g": 228,
+    "saldo": 15,
+    "variant_id": "45872485531784"
+  },
+  "AR-HN-BRW-S": {
+    "peso_g": 161,
+    "saldo": 25,
+    "variant_id": "45872485499016"
+  },
+  "AR-HN-CML-G": {
+    "peso_g": 284,
+    "saldo": 5,
+    "variant_id": "45872485367944"
+  },
+  "AR-HN-CML-M": {
+    "peso_g": 228,
+    "saldo": 15,
+    "variant_id": "45872485335176"
+  },
+  "AR-HN-CML-S": {
+    "peso_g": 161,
+    "saldo": 25,
+    "variant_id": "45872485302408"
+  },
+  "AR-HN-OFF-G": {
+    "peso_g": 284,
+    "saldo": 5,
+    "variant_id": "45872485466248"
+  },
+  "AR-HN-OFF-M": {
+    "peso_g": 228,
+    "saldo": 15,
+    "variant_id": "45872485433480"
+  },
+  "AR-HN-OFF-S": {
+    "peso_g": 161,
+    "saldo": 25,
+    "variant_id": "45872485400712"
+  },
+  "AR-LS-BLK": {
+    "peso_g": 168,
+    "saldo": 15,
+    "variant_id": "45872802955400"
+  },
+  "AR-LS-BRW": {
+    "peso_g": 168,
+    "saldo": 15,
+    "variant_id": "45872803053704"
+  },
+  "AR-LS-CML": {
+    "peso_g": 168,
+    "saldo": 15,
+    "variant_id": "45872803250312"
+  },
+  "AR-LS-OFF": {
+    "peso_g": 168,
+    "saldo": 15,
+    "variant_id": "45872803152008"
+  },
+  "AR-PB-BLK": {
+    "peso_g": 46,
+    "saldo": 15,
+    "variant_id": "45873116184712"
+  },
+  "AR-PB-BRW": {
+    "peso_g": 46,
+    "saldo": 15,
+    "variant_id": "45873116479624"
+  },
+  "AR-PB-CML": {
+    "peso_g": 46,
+    "saldo": 15,
+    "variant_id": "45873116283016"
+  },
+  "AR-PB-OFF": {
+    "peso_g": 46,
+    "saldo": 15,
+    "variant_id": "45873116381320"
+  }
+}
