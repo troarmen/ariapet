@@ -10,7 +10,8 @@ Fecha o ciclo aberto no [status-27-08.md](status-27-08.md) e no
 ### 🔴 O tema não está publicado
 `ARIA v1 (GoodySEO)` está **UNPUBLISHED**. A loja roda o `Atelier`.
 Home, PDP, guia de tamanhos, parcelamento e amostras de cor não estão no ar.
-Além de publicar, faltam subir 7 arquivos alterados que só existem localmente.
+Os arquivos já estão todos no tema (31/08) — falta só publicar, o que tem de
+ser feito no admin: a Shopify bloqueia publicação de tema via API.
 
 ### 🔴 Mensuração: nada instalado
 GA4, GTM, Meta Pixel e verificação do Search Console: zero ocorrências.
@@ -27,10 +28,10 @@ oficiais no admin.
 CNPJ **65.911.458/0001-48** recebido em 29/08 e já no rodapé. Faltam **razão
 social** e **endereço físico**, também exigidos pelo Decreto 7.962/2013.
 
-### 🔴 Peso irreal em 100% dos produtos
-1 kg (padrão do Shopify) no Peitoral, Coleira e Porta Saquinho; 0 kg na Guia e
-na Bandana. Frete errado no checkout, etiqueta e NF-e erradas no Bling.
-**Trava a homologação com pedido-teste.**
+### 🟡 Peso resolvido, falta a embalagem
+As 49 variantes receberam o peso real em 31/08 (ver seção 4). Falta o
+**tamanho da embalagem** — a Frenet cota por peso *e* cubagem, então sem as
+dimensões a cotação continua imprecisa. **Ainda trava a homologação.**
 
 ### 🔴 Estoque zerado em 3 dos 5 produtos
 Peitoral, Coleira e Porta Saquinho aparecem **esgotados** na loja desde 29/08,
@@ -44,7 +45,7 @@ sem controle nenhum. Só Guia (250) e Bandana (155) têm saldo.
 | # | Item | Trava |
 |---|---|---|
 | 1 | ~~CNPJ~~, razão social e endereço | Conformidade legal, rodapé |
-| 2 | Peso real em gramas **e tamanho da embalagem** | Frete, etiqueta, NF-e, homologação |
+| 2 | ~~Peso real em gramas~~ e tamanho da embalagem | Frete, etiqueta, NF-e, homologação |
 | 3 | Estoque real das 36 variantes | 3 produtos esgotados na vitrine |
 | 4 | Material, composição e ferragens | Ficha técnica na PDP (ela pediu no feedback) |
 | 5 | Confirmar parcelamento até 6x sem juros | Bate com o gateway? |
@@ -61,12 +62,12 @@ nunca foram respondidos.
 
 | # | Item | Observação |
 |---|---|---|
-| 1 | Publicar o ARIA v1 | Depois de subir os 7 arquivos locais |
+| 1 | Publicar o ARIA v1 | Arquivos já subidos; falta o QA no preview e o clique no admin |
 | 2 | Instalar GA4, GTM, Meta Pixel e Search Console | Pilar 3 da proposta |
 | 3 | Preencher as 3 políticas no admin | Conteúdo já existe nas páginas |
 | 4 | Decidir entre frete fixo de R$ 22 e cotação Frenet | Os dois estão ativos e aparecem juntos no checkout — o cliente escolhe o menor |
-| 5 | Vincular a opção "Cor" da Coleira ao metacampo | No admin; é o único produto sem amostras de cor |
-| 6 | Traduzir os valores de opção para o `/en` | Hoje o seletor mostra P/M/G enquanto o texto diz "sizes S, M and L" |
+| 5 | Ligar as opções soltas ao metacampo | Coleira (Cor + Tamanho) e Guia (Tamanho); sem isso não há amostra de cor nem tradução do seletor |
+| 6 | ~~Traduzir os valores de opção para o `/en`~~ | Feito nos metaobjects (Black/Brown/Caramel, S/M/L); só aparece nos produtos do item 5 depois que forem ligados |
 | 7 | Mapear situações no Bling e ligar status + rastreio | Última etapa da integração |
 | 8 | Conferir o enquadramento dos heros no preview | Percentuais do art direction nunca foram vistos rodando |
 | 9 | "Complete o conjunto" usa `related`, não complementares | Ela pediu produtos realmente complementares |
@@ -87,3 +88,16 @@ nunca foram respondidos.
 - **Integração Bling ↔ Shopify concluída** — ver [ops/estoque-pre-bling.md](../ops/estoque-pre-bling.md)
 - CNPJ no rodapé: campo "Dados legais" no bloco de copyright, preenchido com
   `CNPJ 65.911.458/0001-48` (falta razão social e endereço)
+- Tema sincronizado: 9 arquivos no ARIA v1, repositório e tema byte a byte iguais
+- **Peso real nas 49 variantes** (31/08), medido na balança pela cliente:
+
+  | Produto | P | M | G |
+  |---|---|---|---|
+  | Peitoral | 161 g | 228 g | 284 g |
+  | Coleira | 78 g | 81 g | 104 g |
+  | Guia | 168 g (medida fixa, igual nos três tamanhos) |||
+  | Porta Saquinho | 46 g (medida fixa, igual nos três tamanhos) |||
+  | Bandana | 52 g (tamanho único) |||
+
+  Peso da peça sem embalagem: o peso do saco/caixa entra uma vez só na
+  configuração da Frenet, senão contaria duas vezes.
