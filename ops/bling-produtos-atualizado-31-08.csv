@@ -1,0 +1,207 @@
+﻿"ID";"Código";"Descrição";"Unidade";"NCM";"Origem";"Preço";"Valor IPI fixo";"Observações";"Situação";"Estoque";"Preço de custo";"Cód. no fornecedor";"Fornecedor";"Localização";"Estoque máximo";"Estoque mínimo";"Peso líquido (Kg)";"Peso bruto (Kg)";"GTIN/EAN";"GTIN/EAN da Embalagem";"Largura do produto";"Altura do Produto";"Profundidade do produto";"Data Validade";"Descrição do Produto no Fornecedor";"Descrição Complementar";"Itens p/ caixa";"Produto Variação";"Tipo Produção";"Classe de enquadramento do IPI";"Código na Lista de Serviços";"Tipo do item";"Grupo de Tags/Tags";"Tributos";"Código Pai";"Código Integração";"Grupo de produtos";"Marca";"CEST";"Volumes";"Descrição Curta";"Cross-Docking";"URL Imagens Externas";"Link Externo";"Meses Garantia no Fornecedor";"Clonar dados do pai";"Condição do Produto";"Frete Grátis";"Número FCI";"Vídeo";"Departamento";"Unidade de Medida";"Preço de Compra";"Valor base ICMS ST para retenção";"Valor ICMS ST para retenção";"Valor ICMS próprio do substituto";"Categoria do produto";"Informações Adicionais"
+"16698914737";"AR-BD-AUR-OS	";"Bandana para Cachorro Aurora By ARIA";"";"";"0";"280,00";"0,00";"";"Ativo";"155,00";"0,00";"	";"";"	";"0,00";"0,00";"0,052";"0,052";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Um clássico atemporal. A bandana Aurora tem toque macio e caimento leve: fica bem sobre a coleira do cachorro e igualmente bem no seu pescoço.</p><p>55 × 55 cm <em>(80% viscose, 20% seda)</em>, em tamanho único.</p><p>Combina com a coleira e a guia da mesma linha.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"";"";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914719";"8925334765704	";"Porta Saquinho para Cachorro ARIA";"";"";"0";"0,00";"0,00";"";"Ativo";"0,00";"0,00";"	";"";"	";"0,00";"0,00";"0,000";"0,000";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Pequeno, e resolve. O porta saquinho ARIA leva o essencial do passeio — saquinhos, chave, petiscos — preso na guia ou na coleira, sem atrapalhar.</p>
+<p>Disponível em quatro cores: preto, caramelo, off white e marrom. Combina com a guia e a coleira da mesma linha.</p>
+<p><strong>Medidas</strong></p>
+<ul>
+<li>Comprimento: 8 cm</li>
+<li>Largura: 5 cm</li>
+</ul>";"0,00";"";"Terceiros";"";"";"";"";"0,00";"";"8925334765704";"";"";"";"0";"";"0";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914725";"AR-PB-CML	";"Cor:Caramelo;Tamanho:P";"";"";"0";"200,00";"0,00";"";"Ativo";"15,00";"0,00";"	";"";"	";"0,00";"0,00";"0,046";"0,046";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Pequeno, e resolve. O porta saquinho ARIA leva o essencial do passeio — saquinhos, chave, petiscos — preso na guia ou na coleira, sem atrapalhar.</p>
+<p>Disponível em quatro cores: preto, caramelo, off white e marrom. Combina com a guia e a coleira da mesma linha.</p>
+<p><strong>Medidas</strong></p>
+<ul>
+<li>Comprimento: 8 cm</li>
+<li>Largura: 5 cm</li>
+</ul>";"0,00";"";"Terceiros";"";"";"";"";"0,00";"8925334765704";"45873116283016";"";"";"";"0";"";"0";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914734";"AR-PB-BRW	";"Cor:Marrom;Tamanho:P";"";"";"0";"200,00";"0,00";"";"Ativo";"15,00";"0,00";"	";"";"	";"0,00";"0,00";"0,046";"0,046";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Pequeno, e resolve. O porta saquinho ARIA leva o essencial do passeio — saquinhos, chave, petiscos — preso na guia ou na coleira, sem atrapalhar.</p>
+<p>Disponível em quatro cores: preto, caramelo, off white e marrom. Combina com a guia e a coleira da mesma linha.</p>
+<p><strong>Medidas</strong></p>
+<ul>
+<li>Comprimento: 8 cm</li>
+<li>Largura: 5 cm</li>
+</ul>";"0,00";"";"Terceiros";"";"";"";"";"0,00";"8925334765704";"45873116479624";"";"";"";"0";"";"0";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914730";"AR-PB-OFF	";"Cor:Off White;Tamanho:P";"";"";"0";"200,00";"0,00";"";"Ativo";"15,00";"0,00";"	";"";"	";"0,00";"0,00";"0,046";"0,046";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Pequeno, e resolve. O porta saquinho ARIA leva o essencial do passeio — saquinhos, chave, petiscos — preso na guia ou na coleira, sem atrapalhar.</p>
+<p>Disponível em quatro cores: preto, caramelo, off white e marrom. Combina com a guia e a coleira da mesma linha.</p>
+<p><strong>Medidas</strong></p>
+<ul>
+<li>Comprimento: 8 cm</li>
+<li>Largura: 5 cm</li>
+</ul>";"0,00";"";"Terceiros";"";"";"";"";"0,00";"8925334765704";"45873116381320";"";"";"";"0";"";"0";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914721";"AR-PB-BLK	";"Cor:Preto;Tamanho:P";"";"";"0";"201,00";"0,00";"";"Ativo";"15,00";"0,00";"	";"";"	";"0,00";"0,00";"0,046";"0,046";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Pequeno, e resolve. O porta saquinho ARIA leva o essencial do passeio — saquinhos, chave, petiscos — preso na guia ou na coleira, sem atrapalhar.</p>
+<p>Disponível em quatro cores: preto, caramelo, off white e marrom. Combina com a guia e a coleira da mesma linha.</p>
+<p><strong>Medidas</strong></p>
+<ul>
+<li>Comprimento: 8 cm</li>
+<li>Largura: 5 cm</li>
+</ul>";"0,00";"";"Terceiros";"";"";"";"";"0,00";"8925334765704";"45873116184712";"";"";"";"0";"";"0";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914677";"8925331423368	";"Coleira para Cachorro ARIA";"";"";"0";"0,00";"0,00";"";"Ativo";"0,00";"0,00";"	";"";"	";"0,00";"0,00";"0,000";"0,000";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>O básico bem feito. A coleira ARIA reúne acabamento premium e ajuste confortável num desenho minimalista, leve o bastante para o cachorro usar todo dia.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: off white, marrom, preto e caramelo. Combina com a guia e o peitoral da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 28 a 38 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 34 a 50 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 42 a 62 cm · tira de 2,5 cm de largura</li>
+</ul><p>Antes de escolher, meça o pescoço do seu cachorro com uma fita métrica e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a>.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"";"8925331423368";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914689";"AR-CL-CML-G	";"Tamanho:G;Cor:Caramelo";"";"";"0";"220,00";"0,00";"";"Ativo";"5,00";"0,00";"	";"";"	";"0,00";"0,00";"0,104";"0,104";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>O básico bem feito. A coleira ARIA reúne acabamento premium e ajuste confortável num desenho minimalista, leve o bastante para o cachorro usar todo dia.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: off white, marrom, preto e caramelo. Combina com a guia e o peitoral da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 28 a 38 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 34 a 50 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 42 a 62 cm · tira de 2,5 cm de largura</li>
+</ul><p>Antes de escolher, meça o pescoço do seu cachorro com uma fita métrica e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a>.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925331423368";"45872917086344";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914687";"AR-CL-BRW-G	";"Tamanho:G;Cor:Marrom";"";"";"0";"220,00";"0,00";"";"Ativo";"5,00";"0,00";"	";"";"	";"0,00";"0,00";"0,104";"0,104";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>O básico bem feito. A coleira ARIA reúne acabamento premium e ajuste confortável num desenho minimalista, leve o bastante para o cachorro usar todo dia.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: off white, marrom, preto e caramelo. Combina com a guia e o peitoral da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 28 a 38 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 34 a 50 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 42 a 62 cm · tira de 2,5 cm de largura</li>
+</ul><p>Antes de escolher, meça o pescoço do seu cachorro com uma fita métrica e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a>.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925331423368";"45872917020808";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914686";"AR-CL-OFF-G	";"Tamanho:G;Cor:Off White";"";"";"0";"220,00";"0,00";"";"Ativo";"5,00";"0,00";"	";"";"	";"0,00";"0,00";"0,104";"0,104";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>O básico bem feito. A coleira ARIA reúne acabamento premium e ajuste confortável num desenho minimalista, leve o bastante para o cachorro usar todo dia.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: off white, marrom, preto e caramelo. Combina com a guia e o peitoral da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 28 a 38 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 34 a 50 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 42 a 62 cm · tira de 2,5 cm de largura</li>
+</ul><p>Antes de escolher, meça o pescoço do seu cachorro com uma fita métrica e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a>.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925331423368";"45872916988040";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914688";"AR-CL-BLK-G	";"Tamanho:G;Cor:Preto";"";"";"0";"220,00";"0,00";"";"Ativo";"5,00";"0,00";"	";"";"	";"0,00";"0,00";"0,104";"0,104";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>O básico bem feito. A coleira ARIA reúne acabamento premium e ajuste confortável num desenho minimalista, leve o bastante para o cachorro usar todo dia.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: off white, marrom, preto e caramelo. Combina com a guia e o peitoral da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 28 a 38 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 34 a 50 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 42 a 62 cm · tira de 2,5 cm de largura</li>
+</ul><p>Antes de escolher, meça o pescoço do seu cachorro com uma fita métrica e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a>.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925331423368";"45872917053576";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914685";"AR-CL-CML-M	";"Tamanho:M;Cor:Caramelo";"";"";"0";"220,00";"0,00";"";"Ativo";"15,00";"0,00";"	";"";"	";"0,00";"0,00";"0,081";"0,081";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>O básico bem feito. A coleira ARIA reúne acabamento premium e ajuste confortável num desenho minimalista, leve o bastante para o cachorro usar todo dia.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: off white, marrom, preto e caramelo. Combina com a guia e o peitoral da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 28 a 38 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 34 a 50 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 42 a 62 cm · tira de 2,5 cm de largura</li>
+</ul><p>Antes de escolher, meça o pescoço do seu cachorro com uma fita métrica e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a>.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925331423368";"45872916955272";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914683";"AR-CL-BRW-M	";"Tamanho:M;Cor:Marrom";"";"";"0";"220,00";"0,00";"";"Ativo";"15,00";"0,00";"	";"";"	";"0,00";"0,00";"0,081";"0,081";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>O básico bem feito. A coleira ARIA reúne acabamento premium e ajuste confortável num desenho minimalista, leve o bastante para o cachorro usar todo dia.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: off white, marrom, preto e caramelo. Combina com a guia e o peitoral da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 28 a 38 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 34 a 50 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 42 a 62 cm · tira de 2,5 cm de largura</li>
+</ul><p>Antes de escolher, meça o pescoço do seu cachorro com uma fita métrica e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a>.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925331423368";"45872916889736";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914682";"AR-CL-OFF-M	";"Tamanho:M;Cor:Off White";"";"";"0";"220,00";"0,00";"";"Ativo";"15,00";"0,00";"	";"";"	";"0,00";"0,00";"0,081";"0,081";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>O básico bem feito. A coleira ARIA reúne acabamento premium e ajuste confortável num desenho minimalista, leve o bastante para o cachorro usar todo dia.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: off white, marrom, preto e caramelo. Combina com a guia e o peitoral da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 28 a 38 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 34 a 50 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 42 a 62 cm · tira de 2,5 cm de largura</li>
+</ul><p>Antes de escolher, meça o pescoço do seu cachorro com uma fita métrica e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a>.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925331423368";"45872916856968";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914684";"AR-CL-BLK-M	";"Tamanho:M;Cor:Preto";"";"";"0";"220,00";"0,00";"";"Ativo";"15,00";"0,00";"	";"";"	";"0,00";"0,00";"0,081";"0,081";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>O básico bem feito. A coleira ARIA reúne acabamento premium e ajuste confortável num desenho minimalista, leve o bastante para o cachorro usar todo dia.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: off white, marrom, preto e caramelo. Combina com a guia e o peitoral da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 28 a 38 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 34 a 50 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 42 a 62 cm · tira de 2,5 cm de largura</li>
+</ul><p>Antes de escolher, meça o pescoço do seu cachorro com uma fita métrica e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a>.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925331423368";"45872916922504";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914681";"AR-CL-CML-S	";"Tamanho:P;Cor:Caramelo";"";"";"0";"220,00";"0,00";"";"Ativo";"25,00";"0,00";"	";"";"	";"0,00";"0,00";"0,078";"0,078";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>O básico bem feito. A coleira ARIA reúne acabamento premium e ajuste confortável num desenho minimalista, leve o bastante para o cachorro usar todo dia.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: off white, marrom, preto e caramelo. Combina com a guia e o peitoral da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 28 a 38 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 34 a 50 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 42 a 62 cm · tira de 2,5 cm de largura</li>
+</ul><p>Antes de escolher, meça o pescoço do seu cachorro com uma fita métrica e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a>.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925331423368";"45872916824200";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914679";"AR-CL-BRW-S	";"Tamanho:P;Cor:Marrom";"";"";"0";"220,00";"0,00";"";"Ativo";"25,00";"0,00";"	";"";"	";"0,00";"0,00";"0,078";"0,078";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>O básico bem feito. A coleira ARIA reúne acabamento premium e ajuste confortável num desenho minimalista, leve o bastante para o cachorro usar todo dia.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: off white, marrom, preto e caramelo. Combina com a guia e o peitoral da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 28 a 38 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 34 a 50 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 42 a 62 cm · tira de 2,5 cm de largura</li>
+</ul><p>Antes de escolher, meça o pescoço do seu cachorro com uma fita métrica e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a>.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925331423368";"45872916758664";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914678";"AR-CL-OFF-S	";"Tamanho:P;Cor:Off White";"";"";"0";"220,00";"0,00";"";"Ativo";"25,00";"0,00";"	";"";"	";"0,00";"0,00";"0,078";"0,078";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>O básico bem feito. A coleira ARIA reúne acabamento premium e ajuste confortável num desenho minimalista, leve o bastante para o cachorro usar todo dia.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: off white, marrom, preto e caramelo. Combina com a guia e o peitoral da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 28 a 38 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 34 a 50 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 42 a 62 cm · tira de 2,5 cm de largura</li>
+</ul><p>Antes de escolher, meça o pescoço do seu cachorro com uma fita métrica e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a>.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925331423368";"45872916725896";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914680";"AR-CL-BLK-S	";"Tamanho:P;Cor:Preto";"";"";"0";"220,00";"0,00";"";"Ativo";"25,00";"0,00";"	";"";"	";"0,00";"0,00";"0,078";"0,078";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>O básico bem feito. A coleira ARIA reúne acabamento premium e ajuste confortável num desenho minimalista, leve o bastante para o cachorro usar todo dia.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: off white, marrom, preto e caramelo. Combina com a guia e o peitoral da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 28 a 38 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 34 a 50 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 42 a 62 cm · tira de 2,5 cm de largura</li>
+</ul><p>Antes de escolher, meça o pescoço do seu cachorro com uma fita métrica e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a>.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925331423368";"45872916791432";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914662";"8925329686664	";"Guia para Cachorro ARIA";"";"";"0";"0,00";"0,00";"";"Ativo";"0,00";"0,00";"	";"";"	";"0,00";"0,00";"0,000";"0,000";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Leve, resistente e atemporal. A guia ARIA tem 230 cm: comprida o bastante para dar liberdade ao cachorro e firme o bastante para o passeio de todo dia.</p>
+<p>Disponível em quatro cores: preto, marrom, off white e caramelo. Combina com a coleira e o peitoral da mesma linha.</p>
+<p><strong>Medidas</strong></p>
+<ul>
+<li>Comprimento: 230 cm</li>
+<li>Largura da tira: 2,0 cm</li>
+</ul>
+<p>Para acertar o tamanho da coleira ou do peitoral que vão junto com a guia, veja o &lt;a href=""../pages/guia-de-tamanhos""&gt;guia de tamanhos das coleiras e peitorais&lt;/a&gt;.</p>";"0,00";"";"Terceiros";"";"";"";"";"0,00";"";"8925329686664";"";"";"";"0";"";"0";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914674";"AR-LS-CML	";"Cor:Caramelo;Tamanho:P";"";"";"0";"220,00";"0,00";"";"Ativo";"15,00";"0,00";"	";"";"	";"0,00";"0,00";"0,168";"0,168";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Leve, resistente e atemporal. A guia ARIA tem 230 cm: comprida o bastante para dar liberdade ao cachorro e firme o bastante para o passeio de todo dia.</p>
+<p>Disponível em quatro cores: preto, marrom, off white e caramelo. Combina com a coleira e o peitoral da mesma linha.</p>
+<p><strong>Medidas</strong></p>
+<ul>
+<li>Comprimento: 230 cm</li>
+<li>Largura da tira: 2,0 cm</li>
+</ul>
+<p>Para acertar o tamanho da coleira ou do peitoral que vão junto com a guia, veja o &lt;a href=""../pages/guia-de-tamanhos""&gt;guia de tamanhos das coleiras e peitorais&lt;/a&gt;.</p>";"0,00";"";"Terceiros";"";"";"";"";"0,00";"8925329686664";"45872803250312";"";"";"";"0";"";"0";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914666";"AR-LS-BRW	";"Cor:Marrom;Tamanho:P";"";"";"0";"220,00";"0,00";"";"Ativo";"15,00";"0,00";"	";"";"	";"0,00";"0,00";"0,168";"0,168";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Leve, resistente e atemporal. A guia ARIA tem 230 cm: comprida o bastante para dar liberdade ao cachorro e firme o bastante para o passeio de todo dia.</p>
+<p>Disponível em quatro cores: preto, marrom, off white e caramelo. Combina com a coleira e o peitoral da mesma linha.</p>
+<p><strong>Medidas</strong></p>
+<ul>
+<li>Comprimento: 230 cm</li>
+<li>Largura da tira: 2,0 cm</li>
+</ul>
+<p>Para acertar o tamanho da coleira ou do peitoral que vão junto com a guia, veja o &lt;a href=""../pages/guia-de-tamanhos""&gt;guia de tamanhos das coleiras e peitorais&lt;/a&gt;.</p>";"0,00";"";"Terceiros";"";"";"";"";"0,00";"8925329686664";"45872803053704";"";"";"";"0";"";"0";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914671";"AR-LS-OFF	";"Cor:Off White;Tamanho:P";"";"";"0";"220,00";"0,00";"";"Ativo";"15,00";"0,00";"	";"";"	";"0,00";"0,00";"0,168";"0,168";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Leve, resistente e atemporal. A guia ARIA tem 230 cm: comprida o bastante para dar liberdade ao cachorro e firme o bastante para o passeio de todo dia.</p>
+<p>Disponível em quatro cores: preto, marrom, off white e caramelo. Combina com a coleira e o peitoral da mesma linha.</p>
+<p><strong>Medidas</strong></p>
+<ul>
+<li>Comprimento: 230 cm</li>
+<li>Largura da tira: 2,0 cm</li>
+</ul>
+<p>Para acertar o tamanho da coleira ou do peitoral que vão junto com a guia, veja o &lt;a href=""../pages/guia-de-tamanhos""&gt;guia de tamanhos das coleiras e peitorais&lt;/a&gt;.</p>";"0,00";"";"Terceiros";"";"";"";"";"0,00";"8925329686664";"45872803152008";"";"";"";"0";"";"0";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914663";"AR-LS-BLK	";"Cor:Preto;Tamanho:P";"";"";"0";"220,00";"0,00";"";"Ativo";"15,00";"0,00";"	";"";"	";"0,00";"0,00";"0,168";"0,168";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Leve, resistente e atemporal. A guia ARIA tem 230 cm: comprida o bastante para dar liberdade ao cachorro e firme o bastante para o passeio de todo dia.</p>
+<p>Disponível em quatro cores: preto, marrom, off white e caramelo. Combina com a coleira e o peitoral da mesma linha.</p>
+<p><strong>Medidas</strong></p>
+<ul>
+<li>Comprimento: 230 cm</li>
+<li>Largura da tira: 2,0 cm</li>
+</ul>
+<p>Para acertar o tamanho da coleira ou do peitoral que vão junto com a guia, veja o &lt;a href=""../pages/guia-de-tamanhos""&gt;guia de tamanhos das coleiras e peitorais&lt;/a&gt;.</p>";"0,00";"";"Terceiros";"";"";"";"";"0,00";"8925329686664";"45872802955400";"";"";"";"0";"";"0";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914636";"8925324673160	";"Peitoral para Cachorro ARIA";"";"";"0";"0,00";"0,00";"";"Ativo";"0,00";"0,00";"	";"";"	";"0,00";"0,00";"0,000";"0,000";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Conforto onde mais importa. Em vez de concentrar a força no pescoço, o peitoral ARIA distribui a pressão pelo peito do cachorro — com ajuste preciso e o mesmo acabamento do resto da linha.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: preto, caramelo, off white e marrom. Combina com a guia e a coleira da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 32 a 42 cm · tórax de 38 a 58 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 40 a 50 cm · tórax de 55 a 75 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 48 a 62 cm · tórax de 70 a 85 cm · tira de 2,5 cm de largura</li>
+</ul><p>Meça o pescoço e o tórax do seu cachorro e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a> antes de escolher.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"";"8925324673160";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914650";"AR-HN-CML-G	";"Cor:Caramelo;Tamanho:G";"";"";"0";"200,00";"0,00";"";"Ativo";"5,00";"0,00";"	";"";"	";"0,00";"0,00";"0,284";"0,284";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Conforto onde mais importa. Em vez de concentrar a força no pescoço, o peitoral ARIA distribui a pressão pelo peito do cachorro — com ajuste preciso e o mesmo acabamento do resto da linha.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: preto, caramelo, off white e marrom. Combina com a guia e a coleira da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 32 a 42 cm · tórax de 38 a 58 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 40 a 50 cm · tórax de 55 a 75 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 48 a 62 cm · tórax de 70 a 85 cm · tira de 2,5 cm de largura</li>
+</ul><p>Meça o pescoço e o tórax do seu cachorro e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a> antes de escolher.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925324673160";"45872485367944";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914647";"AR-HN-CML-M	";"Cor:Caramelo;Tamanho:M";"";"";"0";"200,00";"0,00";"";"Ativo";"15,00";"0,00";"	";"";"	";"0,00";"0,00";"0,228";"0,228";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Conforto onde mais importa. Em vez de concentrar a força no pescoço, o peitoral ARIA distribui a pressão pelo peito do cachorro — com ajuste preciso e o mesmo acabamento do resto da linha.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: preto, caramelo, off white e marrom. Combina com a guia e a coleira da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 32 a 42 cm · tórax de 38 a 58 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 40 a 50 cm · tórax de 55 a 75 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 48 a 62 cm · tórax de 70 a 85 cm · tira de 2,5 cm de largura</li>
+</ul><p>Meça o pescoço e o tórax do seu cachorro e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a> antes de escolher.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925324673160";"45872485335176";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914642";"AR-HN-CML-S	";"Cor:Caramelo;Tamanho:P";"";"";"0";"200,00";"0,00";"";"Ativo";"25,00";"0,00";"	";"";"	";"0,00";"0,00";"0,161";"0,161";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Conforto onde mais importa. Em vez de concentrar a força no pescoço, o peitoral ARIA distribui a pressão pelo peito do cachorro — com ajuste preciso e o mesmo acabamento do resto da linha.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: preto, caramelo, off white e marrom. Combina com a guia e a coleira da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 32 a 42 cm · tórax de 38 a 58 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 40 a 50 cm · tórax de 55 a 75 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 48 a 62 cm · tórax de 70 a 85 cm · tira de 2,5 cm de largura</li>
+</ul><p>Meça o pescoço e o tórax do seu cachorro e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a> antes de escolher.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925324673160";"45872485302408";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914660";"AR-HN-BRW-G	";"Cor:Marrom;Tamanho:G";"";"";"0";"200,00";"0,00";"";"Ativo";"5,00";"0,00";"	";"";"	";"0,00";"0,00";"0,284";"0,284";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Conforto onde mais importa. Em vez de concentrar a força no pescoço, o peitoral ARIA distribui a pressão pelo peito do cachorro — com ajuste preciso e o mesmo acabamento do resto da linha.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: preto, caramelo, off white e marrom. Combina com a guia e a coleira da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 32 a 42 cm · tórax de 38 a 58 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 40 a 50 cm · tórax de 55 a 75 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 48 a 62 cm · tórax de 70 a 85 cm · tira de 2,5 cm de largura</li>
+</ul><p>Meça o pescoço e o tórax do seu cachorro e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a> antes de escolher.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925324673160";"45872485564552";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914658";"AR-HN-BRW-M	";"Cor:Marrom;Tamanho:M";"";"";"0";"200,00";"0,00";"";"Ativo";"15,00";"0,00";"	";"";"	";"0,00";"0,00";"0,228";"0,228";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Conforto onde mais importa. Em vez de concentrar a força no pescoço, o peitoral ARIA distribui a pressão pelo peito do cachorro — com ajuste preciso e o mesmo acabamento do resto da linha.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: preto, caramelo, off white e marrom. Combina com a guia e a coleira da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 32 a 42 cm · tórax de 38 a 58 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 40 a 50 cm · tórax de 55 a 75 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 48 a 62 cm · tórax de 70 a 85 cm · tira de 2,5 cm de largura</li>
+</ul><p>Meça o pescoço e o tórax do seu cachorro e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a> antes de escolher.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925324673160";"45872485531784";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914657";"AR-HN-BRW-S	";"Cor:Marrom;Tamanho:P";"";"";"0";"200,00";"0,00";"";"Ativo";"25,00";"0,00";"	";"";"	";"0,00";"0,00";"0,161";"0,161";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Conforto onde mais importa. Em vez de concentrar a força no pescoço, o peitoral ARIA distribui a pressão pelo peito do cachorro — com ajuste preciso e o mesmo acabamento do resto da linha.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: preto, caramelo, off white e marrom. Combina com a guia e a coleira da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 32 a 42 cm · tórax de 38 a 58 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 40 a 50 cm · tórax de 55 a 75 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 48 a 62 cm · tórax de 70 a 85 cm · tira de 2,5 cm de largura</li>
+</ul><p>Meça o pescoço e o tórax do seu cachorro e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a> antes de escolher.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925324673160";"45872485499016";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914656";"AR-HN-OFF-G	";"Cor:Off White;Tamanho:G";"";"";"0";"200,00";"0,00";"";"Ativo";"5,00";"0,00";"	";"";"	";"0,00";"0,00";"0,284";"0,284";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Conforto onde mais importa. Em vez de concentrar a força no pescoço, o peitoral ARIA distribui a pressão pelo peito do cachorro — com ajuste preciso e o mesmo acabamento do resto da linha.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: preto, caramelo, off white e marrom. Combina com a guia e a coleira da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 32 a 42 cm · tórax de 38 a 58 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 40 a 50 cm · tórax de 55 a 75 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 48 a 62 cm · tórax de 70 a 85 cm · tira de 2,5 cm de largura</li>
+</ul><p>Meça o pescoço e o tórax do seu cachorro e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a> antes de escolher.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925324673160";"45872485466248";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914655";"AR-HN-OFF-M	";"Cor:Off White;Tamanho:M";"";"";"0";"200,00";"0,00";"";"Ativo";"15,00";"0,00";"	";"";"	";"0,00";"0,00";"0,228";"0,228";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Conforto onde mais importa. Em vez de concentrar a força no pescoço, o peitoral ARIA distribui a pressão pelo peito do cachorro — com ajuste preciso e o mesmo acabamento do resto da linha.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: preto, caramelo, off white e marrom. Combina com a guia e a coleira da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 32 a 42 cm · tórax de 38 a 58 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 40 a 50 cm · tórax de 55 a 75 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 48 a 62 cm · tórax de 70 a 85 cm · tira de 2,5 cm de largura</li>
+</ul><p>Meça o pescoço e o tórax do seu cachorro e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a> antes de escolher.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925324673160";"45872485433480";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914652";"AR-HN-OFF-S	";"Cor:Off White;Tamanho:P";"";"";"0";"200,00";"0,00";"";"Ativo";"25,00";"0,00";"	";"";"	";"0,00";"0,00";"0,161";"0,161";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Conforto onde mais importa. Em vez de concentrar a força no pescoço, o peitoral ARIA distribui a pressão pelo peito do cachorro — com ajuste preciso e o mesmo acabamento do resto da linha.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: preto, caramelo, off white e marrom. Combina com a guia e a coleira da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 32 a 42 cm · tórax de 38 a 58 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 40 a 50 cm · tórax de 55 a 75 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 48 a 62 cm · tórax de 70 a 85 cm · tira de 2,5 cm de largura</li>
+</ul><p>Meça o pescoço e o tórax do seu cachorro e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a> antes de escolher.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925324673160";"45872485400712";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914640";"AR-HN-BLK-G	";"Cor:Preto;Tamanho:G";"";"";"0";"200,00";"0,00";"";"Ativo";"5,00";"0,00";"	";"";"	";"0,00";"0,00";"0,284";"0,284";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Conforto onde mais importa. Em vez de concentrar a força no pescoço, o peitoral ARIA distribui a pressão pelo peito do cachorro — com ajuste preciso e o mesmo acabamento do resto da linha.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: preto, caramelo, off white e marrom. Combina com a guia e a coleira da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 32 a 42 cm · tórax de 38 a 58 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 40 a 50 cm · tórax de 55 a 75 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 48 a 62 cm · tórax de 70 a 85 cm · tira de 2,5 cm de largura</li>
+</ul><p>Meça o pescoço e o tórax do seu cachorro e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a> antes de escolher.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925324673160";"45872485269640";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914638";"AR-HN-BLK-M	";"Cor:Preto;Tamanho:M";"";"";"0";"200,00";"0,00";"";"Ativo";"15,00";"0,00";"	";"";"	";"0,00";"0,00";"0,228";"0,228";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Conforto onde mais importa. Em vez de concentrar a força no pescoço, o peitoral ARIA distribui a pressão pelo peito do cachorro — com ajuste preciso e o mesmo acabamento do resto da linha.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: preto, caramelo, off white e marrom. Combina com a guia e a coleira da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 32 a 42 cm · tórax de 38 a 58 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 40 a 50 cm · tórax de 55 a 75 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 48 a 62 cm · tórax de 70 a 85 cm · tira de 2,5 cm de largura</li>
+</ul><p>Meça o pescoço e o tórax do seu cachorro e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a> antes de escolher.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925324673160";"45872485236872";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
+"16698914637";"AR-HN-BLK-S	";"Cor:Preto;Tamanho:P";"";"";"0";"200,00";"0,00";"";"Ativo";"25,00";"0,00";"	";"";"	";"0,00";"0,00";"0,161";"0,161";"	";"	";"0,00";"0,00";"0,00";"";"";"<p>Conforto onde mais importa. Em vez de concentrar a força no pescoço, o peitoral ARIA distribui a pressão pelo peito do cachorro — com ajuste preciso e o mesmo acabamento do resto da linha.</p><p>Disponível nos tamanhos P, M e G e em quatro cores: preto, caramelo, off white e marrom. Combina com a guia e a coleira da mesma linha.</p><p><strong>Medidas</strong></p><ul>
+<li>P — pescoço de 32 a 42 cm · tórax de 38 a 58 cm · tira de 2,0 cm de largura</li>
+<li>M — pescoço de 40 a 50 cm · tórax de 55 a 75 cm · tira de 2,0 cm de largura</li>
+<li>G — pescoço de 48 a 62 cm · tórax de 70 a 85 cm · tira de 2,5 cm de largura</li>
+</ul><p>Meça o pescoço e o tórax do seu cachorro e confira o <a href=""/pages/guia-de-tamanhos"">guia de tamanhos das coleiras e peitorais</a> antes de escolher.</p>";"0,00";"Produto";"Terceiros";"";"";"";"";"0,00";"8925324673160";"45872485204104";"";"";"";"0";"";"";"";"";"0";"NÃO";"NOVO";"NÃO";"";"";"";"Centímetro";"0,00";"0,0000";"0,0000";"0,0000";"";""
