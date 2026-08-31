@@ -1,33 +1,33 @@
-sku;produto;variacao;saldo;peso_liquido_g
-AR-HN-BLK-S;Peitoral para Cachorro ARIA;Preto / P;25;161
-AR-HN-BLK-M;Peitoral para Cachorro ARIA;Preto / M;15;228
-AR-HN-BLK-G;Peitoral para Cachorro ARIA;Preto / G;5;284
-AR-HN-CML-S;Peitoral para Cachorro ARIA;Caramelo / P;25;161
-AR-HN-CML-M;Peitoral para Cachorro ARIA;Caramelo / M;15;228
-AR-HN-CML-G;Peitoral para Cachorro ARIA;Caramelo / G;5;284
-AR-HN-OFF-S;Peitoral para Cachorro ARIA;Off White / P;25;161
-AR-HN-OFF-M;Peitoral para Cachorro ARIA;Off White / M;15;228
-AR-HN-OFF-G;Peitoral para Cachorro ARIA;Off White / G;5;284
-AR-HN-BRW-S;Peitoral para Cachorro ARIA;Marrom / P;25;161
-AR-HN-BRW-M;Peitoral para Cachorro ARIA;Marrom / M;15;228
-AR-HN-BRW-G;Peitoral para Cachorro ARIA;Marrom / G;5;284
-AR-CL-BLK-S;Coleira para Cachorro ARIA;P / Preto;25;78
-AR-CL-BLK-M;Coleira para Cachorro ARIA;M / Preto;15;81
-AR-CL-BLK-G;Coleira para Cachorro ARIA;G / Preto;5;104
-AR-CL-CML-S;Coleira para Cachorro ARIA;P / Caramelo;25;78
-AR-CL-CML-M;Coleira para Cachorro ARIA;M / Caramelo;15;81
-AR-CL-CML-G;Coleira para Cachorro ARIA;G / Caramelo;5;104
-AR-CL-OFF-S;Coleira para Cachorro ARIA;P / Off White;25;78
-AR-CL-OFF-M;Coleira para Cachorro ARIA;M / Off White;15;81
-AR-CL-OFF-G;Coleira para Cachorro ARIA;G / Off White;5;104
-AR-CL-BRW-S;Coleira para Cachorro ARIA;P / Marrom;25;78
-AR-CL-BRW-M;Coleira para Cachorro ARIA;M / Marrom;15;81
-AR-CL-BRW-G;Coleira para Cachorro ARIA;G / Marrom;5;104
-AR-LS-BLK;Guia para Cachorro ARIA;Preto;15;168
-AR-LS-CML;Guia para Cachorro ARIA;Caramelo;15;168
-AR-LS-OFF;Guia para Cachorro ARIA;Off White;15;168
-AR-LS-BRW;Guia para Cachorro ARIA;Marrom;15;168
-AR-PB-BLK;Porta Saquinho para Cachorro ARIA;Preto;15;46
-AR-PB-CML;Porta Saquinho para Cachorro ARIA;Caramelo;15;46
-AR-PB-OFF;Porta Saquinho para Cachorro ARIA;Off White;15;46
-AR-PB-BRW;Porta Saquinho para Cachorro ARIA;Marrom;15;46
+sku;produto;cor;tamanho;estoque;peso_kg;codigo_integracao
+AR-HN-BLK-S;Peitoral;Preto;P;25;0,161;
+AR-HN-BLK-M;Peitoral;Preto;M;15;0,228;
+AR-HN-BLK-G;Peitoral;Preto;G;5;0,284;
+AR-HN-CML-S;Peitoral;Caramelo;P;25;0,161;
+AR-HN-CML-M;Peitoral;Caramelo;M;15;0,228;
+AR-HN-CML-G;Peitoral;Caramelo;G;5;0,284;
+AR-HN-OFF-S;Peitoral;Off White;P;25;0,161;
+AR-HN-OFF-M;Peitoral;Off White;M;15;0,228;
+AR-HN-OFF-G;Peitoral;Off White;G;5;0,284;
+AR-HN-BRW-S;Peitoral;Marrom;P;25;0,161;
+AR-HN-BRW-M;Peitoral;Marrom;M;15;0,228;
+AR-HN-BRW-G;Peitoral;Marrom;G;5;0,284;
+AR-CL-BLK-S;Coleira;Preto;P;25;0,078;
+AR-CL-BLK-M;Coleira;Preto;M;15;0,081;
+AR-CL-BLK-G;Coleira;Preto;G;5;0,104;
+AR-CL-CML-S;Coleira;Caramelo;P;25;0,078;
+AR-CL-CML-M;Coleira;Caramelo;M;15;0,081;
+AR-CL-CML-G;Coleira;Caramelo;G;5;0,104;
+AR-CL-OFF-S;Coleira;Off White;P;25;0,078;
+AR-CL-OFF-M;Coleira;Off White;M;15;0,081;
+AR-CL-OFF-G;Coleira;Off White;G;5;0,104;
+AR-CL-BRW-S;Coleira;Marrom;P;25;0,078;
+AR-CL-BRW-M;Coleira;Marrom;M;15;0,081;
+AR-CL-BRW-G;Coleira;Marrom;G;5;0,104;
+AR-LS-BLK;Guia;Preto;unico;15;0,168;45872802955400
+AR-LS-CML;Guia;Caramelo;unico;15;0,168;45872803250312
+AR-LS-OFF;Guia;Off White;unico;15;0,168;45872803152008
+AR-LS-BRW;Guia;Marrom;unico;15;0,168;45872803053704
+AR-PB-BLK;Porta Saquinho;Preto;unico;15;0,046;45873116184712
+AR-PB-CML;Porta Saquinho;Caramelo;unico;15;0,046;45873116283016
+AR-PB-OFF;Porta Saquinho;Off White;unico;15;0,046;45873116381320
+AR-PB-BRW;Porta Saquinho;Marrom;unico;15;0,046;45873116479624

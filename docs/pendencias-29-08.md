@@ -52,7 +52,7 @@ Sobram 51. Pode ser produção posterior ao documento ou saldo desatualizado.
 | 3 | ~~Estoque~~; falta só conferir a Bandana | 155 na loja contra 104 no controle |
 | 4 | Material, composição e ferragens | Ficha técnica na PDP (ela pediu no feedback) |
 | 5 | Confirmar parcelamento até 6x sem juros | Bate com o gateway? |
-| 6 | Porta Saquinho Preto: R$ 201 ou R$ 200? | Preço divergente nos dois sistemas |
+| 6 | Porta Saquinho Preto custa R$ 201, as outras 3 cores R$ 200 | **Não** é divergência entre sistemas — Shopify e Bling dizem 201. Parece erro de digitação |
 | 7 | Assinatura: "Made to match." ou "Designed for every step"? | Home e página Sobre |
 | 8 | Coleções por tipo (atual) ou por porte do pet (proposta pág. 7)? | Navegação do site |
 
