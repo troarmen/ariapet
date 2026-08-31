@@ -16,7 +16,7 @@
         "rotulo": {
           "type": "text",
           "settings": {
-            "text": "<p>Acessórios para cachorro</p>",
+            "text": "<p>A coleção ARIA</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -66,7 +66,7 @@
         "subtitulo": {
           "type": "text",
           "settings": {
-            "text": "<p>Coleira, peitoral, guia, porta saquinho e bandana desenhados para combinar entre si.</p>",
+            "text": "<p>Coleira, peitoral, guia, porta saquinho e bandana. Tudo da mesma família, para você combinar do jeito que quiser.</p>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -173,7 +173,7 @@
         "texto": {
           "type": "text",
           "settings": {
-            "text": "<p>Cada peça ARIA parte do mesmo desenho: as mesmas cores, as mesmas ferragens, o mesmo acabamento. Coleira, peitoral, guia e porta saquinho combinam entre si — em qualquer combinação que você escolher.</p>",
+            "text": "<p>Toda peça ARIA nasce do mesmo desenho: as mesmas cores, as mesmas ferragens, o mesmo acabamento. Por isso coleira, peitoral, guia e porta saquinho combinam entre si — monte o conjunto do jeito que você quiser.</p>",
             "width": "100%",
             "max_width": "narrow",
             "alignment": "center",
@@ -275,7 +275,7 @@
         "titulo_marca": {
           "type": "text",
           "settings": {
-            "text": "<h2>Desenhado para durar no seu dia a dia</h2>",
+            "text": "<h2>Feito para durar no dia a dia de vocês</h2>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -300,7 +300,7 @@
         "cta_marca": {
           "type": "button",
           "settings": {
-            "label": "Conheça a história da ARIA",
+            "label": "Nossa história",
             "link": "shopify://pages/about",
             "open_in_new_tab": false,
             "style_class": "button-secondary",
@@ -412,7 +412,7 @@
             "p": {
               "type": "text",
               "settings": {
-                "text": "<p>Desenho próprio, criado pela ARIA. Linhas simples e paleta neutra, pensadas para não sair de moda.</p>",
+                "text": "<p>Todo desenho é criado pela ARIA. Linhas simples e paleta neutra, do tipo que não sai de moda.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -500,7 +500,7 @@
             "p": {
               "type": "text",
               "settings": {
-                "text": "<p>Coleira, peitoral, guia e porta saquinho na mesma cor e com as mesmas ferragens, para montar o conjunto do seu jeito.</p>",
+                "text": "<p>Coleira, peitoral, guia e porta saquinho na mesma cor e com as mesmas ferragens, para você montar o conjunto inteiro.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -588,7 +588,7 @@
             "p": {
               "type": "text",
               "settings": {
-                "text": "<p>Tamanhos P, M e G com regulagem no pescoço e no tórax. Veja o <a href=\"/pages/guia-de-tamanhos\">guia de tamanhos</a> antes de escolher.</p>",
+                "text": "<p>Tamanhos P, M e G com regulagem no pescoço e no tórax. Na dúvida, veja o <a href=\"/pages/guia-de-tamanhos\">guia de tamanhos</a>.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -718,7 +718,7 @@
               "type": "_product-list-button",
               "name": "t:names.product_list_button",
               "settings": {
-                "label": "Ver todos os acessórios",
+                "label": "Ver a coleção completa",
                 "open_in_new_tab": false,
                 "style_class": "link",
                 "width": "fit-content",
@@ -1146,7 +1146,7 @@
         "texto_beneficios": {
           "type": "text",
           "settings": {
-            "text": "<p><a href=\"/pages/troca-e-devolucao\">Troca em até 7 dias</a> após o recebimento &middot; Frete calculado no checkout &middot; Pagamento em ambiente seguro</p>",
+            "text": "<p>Até 6x sem juros &middot; <a href=\"/pages/troca-e-devolucao\">Troca em até 7 dias</a> após o recebimento &middot; Frete calculado no checkout &middot; Pagamento em ambiente seguro</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",

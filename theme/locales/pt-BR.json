@@ -160,6 +160,7 @@
     "duties_included": "Tributos de importação incluídos.",
     "shipping_policy_html": "<a href=\"{{ link }}\">Frete</a> calculado no checkout.",
     "taxes_included": "Tributos incluídos.",
+    "installments": "ou {{ installments }}x de {{ price }} sem juros",
     "product_badge_sold_out": "Esgotado",
     "product_badge_sale": "Promoção",
     "search_input_label": "Pesquisa",

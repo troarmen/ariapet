@@ -82,7 +82,7 @@
             "text_f9CFLH": {
               "type": "text",
               "settings": {
-                "text": "<p>Lançamentos, guia de tamanhos e acesso antecipado às novas coleções.</p>",
+                "text": "<p>Lançamentos e acesso antecipado às novas coleções.</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -214,6 +214,7 @@
           "type": "footer-copyright",
           "settings": {
             "show_powered_by": false,
+            "legal_text": "CNPJ 65.911.458/0001-48",
             "font_size": "0.75rem",
             "case": "none"
           },

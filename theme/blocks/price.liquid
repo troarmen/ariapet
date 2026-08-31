@@ -1,5 +1,3 @@
-
-
 {%- liquid
   assign block_settings = block.settings
   assign product_resource = closest.product
@@ -69,18 +67,45 @@
     </div>
   {% endif %}
 
-  {%- if selected_variant != blank and block_settings.show_installments -%}
-    <div class="installments">
-      {%- assign product_form_installment_id = 'product-form-installment-' | append: block.id -%}
-      {%- form 'product', product_resource, id: product_form_installment_id, class: 'payment-terms' -%}
-        <input
-          type="hidden"
-          name="id"
-          value="{{ selected_variant.id }}"
-        >
+  {%- comment -%}
+    ARIA / GoodySEO: o código original era
+
+      {% form 'product', product_resource, class: 'payment-terms' %}
         {{ form | payment_terms }}
-      {%- endform -%}
-    </div>
+      {% endform %}
+
+    O filtro `payment_terms` renderiza o widget do Shop Pay Installments, que
+    não existe no Brasil — o bloco saía vazio e o parcelamento nunca aparecia.
+    Aqui a parcela é calculada a partir do preço da variante selecionada.
+    Como isto vive dentro de <product-price>, acompanha a troca de variante.
+
+    Regra comercial (definida em 27/08/2026): até 6x sem juros. Para mudar o
+    número de parcelas, use o controle "Parcelamento — número de parcelas" no
+    editor; o texto fica em `content.installments` nos arquivos de idioma.
+  {%- endcomment -%}
+  {%- if selected_variant != blank and block_settings.show_installments -%}
+    {%- liquid
+      assign installments_max = block_settings.installments_count | default: 6
+
+      # Piso por parcela: abaixo disso o parcelamento não é oferecido e o número
+      # de parcelas cai para o maior valor que respeita o piso.
+      assign installment_floor = 500
+      assign installments_allowed = selected_variant.price | divided_by: installment_floor
+      assign installments_count = installments_max
+      if installments_allowed < installments_max
+        assign installments_count = installments_allowed
+      endif
+
+      # Divisão inteira arredondando para CIMA: a soma das parcelas nunca pode
+      # ficar abaixo do preço à vista, senão o anúncio promete menos do que cobra.
+      assign installment_value = selected_variant.price | plus: installments_count | minus: 1 | divided_by: installments_count
+      assign installment_money = installment_value | money
+    -%}
+    {%- if installments_count > 1 -%}
+      <div class="installments">
+        {{- 'content.installments' | t: installments: installments_count, price: installment_money -}}
+      </div>
+    {%- endif -%}
   {%- endif -%}
 </product-price>
 
@@ -108,6 +133,16 @@
       "id": "show_installments",
       "label": "t:settings.installments",
       "default": false
+    },
+    {
+      "type": "range",
+      "id": "installments_count",
+      "label": "Parcelamento — número de parcelas",
+      "min": 2,
+      "max": 12,
+      "step": 1,
+      "default": 6,
+      "visible_if": "{{ block.settings.show_installments }}"
     },
     {
       "type": "checkbox",

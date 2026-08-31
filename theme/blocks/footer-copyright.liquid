@@ -1,4 +1,3 @@
-
 {% assign block_settings = block.settings %}
 <div
   class="
@@ -16,7 +15,18 @@
       , {{ powered_by_link }}
     {%- endif -%}
   </span>
+  {%- if block_settings.legal_text != blank -%}
+    <span class="footer-utilities__text footer-utilities__legal">
+      {{- block_settings.legal_text -}}
+    </span>
+  {%- endif -%}
 </div>
+
+{% stylesheet %}
+  .footer-utilities__legal {
+    display: block;
+  }
+{% endstylesheet %}
 
 {% schema %}
 {
@@ -28,6 +38,12 @@
       "id": "show_powered_by",
       "label": "t:settings.show_powered_by_shopify",
       "default": true
+    },
+    {
+      "type": "inline_richtext",
+      "id": "legal_text",
+      "label": "Dados legais",
+      "info": "Razão social, CNPJ e endereço. Exigido pelo Decreto 7.962/2013."
     },
     {
       "type": "paragraph",

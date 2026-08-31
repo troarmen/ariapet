@@ -244,12 +244,29 @@
         {{ total_price }}
       </text-component>
     </span>
+    {%- comment -%}
+      ARIA / GoodySEO: mesmo defeito do bloco de preço (blocks/price.liquid).
+      `payment_terms` é o widget do Shop Pay Installments, indisponível no
+      Brasil: esta linha renderizava um <span> vazio no resumo do carrinho.
+      Aqui a parcela sai do total do carrinho, com a mesma regra da PDP.
+    {%- endcomment -%}
     {% if settings.show_installments %}
-      <span class="cart-totals__item cart-totals__installments">
-        {% form 'cart', cart %}
-          {{ form | payment_terms }}
-        {% endform %}
-      </span>
+      {%- liquid
+        assign installments_max = 6
+        assign installment_floor = 500
+        assign installments_allowed = cart.total_price | divided_by: installment_floor
+        assign installments_count = installments_max
+        if installments_allowed < installments_max
+          assign installments_count = installments_allowed
+        endif
+        assign installment_value = cart.total_price | plus: installments_count | minus: 1 | divided_by: installments_count
+        assign installment_money = installment_value | money
+      -%}
+      {% if installments_count > 1 %}
+        <span class="cart-totals__item cart-totals__installments">
+          {{- 'content.installments' | t: installments: installments_count, price: installment_money -}}
+        </span>
+      {% endif %}
     {% endif %}
     <div class="cart-totals__item cart-totals__tax-note cart-primary-typography">
       {% render 'tax-info', has_discounts_enabled: settings.show_add_discount_code %}

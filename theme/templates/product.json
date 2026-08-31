@@ -71,7 +71,6 @@
               "type": "group",
               "name": "Header",
               "settings": {
-                "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -99,6 +98,7 @@
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
+                "open_in_new_tab": false,
                 "padding-block-start": 0,
                 "padding-block-end": 0,
                 "padding-inline-start": 0,
@@ -135,7 +135,8 @@
                   "type": "price",
                   "settings": {
                     "show_sale_price_first": true,
-                    "show_installments": false,
+                    "show_installments": true,
+                    "installments_count": 6,
                     "show_tax_info": false,
                     "type_preset": "paragraph",
                     "width": "100%",
@@ -175,7 +176,7 @@
               "type": "variant-picker",
               "settings": {
                 "variant_style": "buttons",
-                "show_swatches": false,
+                "show_swatches": true,
                 "alignment": "left",
                 "padding-block-start": 0,
                 "padding-block-end": 0,
@@ -200,7 +201,7 @@
                 "text_guia_intro": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Use uma fita métrica flexível, com o cachorro em pé e relaxado. Se ele estiver entre dois tamanhos, opte pelo maior.</p>",
+                    "text": "<p>Meça com uma fita métrica flexível, com o cachorro em pé e relaxado. Se ele ficar entre dois tamanhos, escolha o maior.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -224,7 +225,7 @@
                 "text_guia_link": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Para maior conforto, acrescente cerca de 1,5 cm às medidas de pescoço e tórax. Veja o <a href=\"/pages/guia-de-tamanhos\">guia de tamanhos completo, com o passo a passo da medição</a>.</p>",
+                    "text": "<p>Para ficar mais confortável, some cerca de 1,5 cm às medidas de pescoço e tórax. Veja o <a href=\"/pages/guia-de-tamanhos\">guia de tamanhos completo, com o passo a passo de como medir</a>.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -277,7 +278,7 @@
               "type": "text",
               "name": "Benefícios",
               "settings": {
-                "text": "<p><a href=\"/pages/troca-e-devolucao\">Troca em até 7 dias</a> após o recebimento &middot; Frete calculado no checkout &middot; Pagamento em ambiente seguro</p>",
+                "text": "<p>Até 6x sem juros &middot; <a href=\"/pages/troca-e-devolucao\">Troca em até 7 dias</a> após o recebimento &middot; Frete calculado no checkout &middot; Pagamento em ambiente seguro</p>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -354,7 +355,7 @@
                     "text_ajuste": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>A peça precisa ficar firme, mas sem apertar: você deve conseguir passar dois dedos entre o acessório e o corpo do cachorro com folga.</p><p>Antes de cada saída, verifique se o ajuste continua correto e se os fechos estão travados. Substitua a peça caso apareça sinal de desgaste que comprometa a segurança.</p>",
+                        "text": "<p>A peça tem que ficar firme, mas sem apertar: o teste é conseguir passar dois dedos entre o acessório e o corpo do cachorro.</p><p>Antes de sair, confira se o ajuste continua certo e se os fechos estão travados. Se aparecer qualquer sinal de desgaste, troque a peça.</p>",
                         "width": "100%",
                         "type_preset": "rte"
                       },
@@ -375,7 +376,7 @@
                     "text_cuidados": {
                       "type": "text",
                       "settings": {
-                        "text": "<p><strong>Limpeza.</strong> Pano macio levemente umedecido; se precisar, sabão neutro. Sem alvejante, álcool, solvente ou produto abrasivo.</p><p><strong>Secagem.</strong> Naturalmente, à sombra. Sem secadora e sem fonte de calor.</p><p><strong>Conservação.</strong> Guarde em local seco e arejado. Evite contato prolongado com água salgada, cloro, areia ou lama; depois da praia ou da piscina, limpe com água doce e seque bem.</p><p><strong>Ferragens.</strong> Mantenha limpas e secas após o uso.</p><p><a href=\"/pages/cuidados\">Ver todas as instruções de cuidado</a></p>",
+                        "text": "<p><strong>Limpeza.</strong> Use um pano macio levemente umedecido e, se precisar, sabão neutro. Nada de alvejante, álcool, solvente ou produto abrasivo.</p><p><strong>Secagem.</strong> Deixe secar naturalmente, à sombra. Sem secadora e sem fonte de calor.</p><p><strong>Conservação.</strong> Guarde em local seco e arejado. Evite contato prolongado com água salgada, cloro, areia ou lama; depois da praia ou da piscina, lave com água doce e seque bem.</p><p><strong>Ferragens.</strong> Mantenha limpas e secas depois do uso.</p><p><a href=\"/pages/cuidados\">Ver todos os cuidados</a></p>",
                         "width": "100%",
                         "type_preset": "rte"
                       },
@@ -396,7 +397,7 @@
                     "text_troca": {
                       "type": "text",
                       "settings": {
-                        "text": "<p>Você tem <strong>7 dias corridos</strong> a partir do recebimento para solicitar troca ou devolução pelo nosso atendimento.</p><p>A peça precisa voltar sem sinais de uso, com a embalagem original e todos os acessórios.</p><p><a href=\"/pages/troca-e-devolucao\">Ler a política completa de troca e devolução</a></p>",
+                        "text": "<p>Você tem <strong>7 dias corridos</strong> a partir do recebimento para pedir troca ou devolução pelo nosso atendimento.</p><p>A peça precisa voltar sem sinais de uso, com a embalagem original e tudo o que veio junto.</p><p><a href=\"/pages/troca-e-devolucao\">Ler a política completa de troca e devolução</a></p>",
                         "width": "100%",
                         "type_preset": "rte"
                       },
