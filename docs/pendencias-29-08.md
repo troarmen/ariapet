@@ -33,10 +33,17 @@ As 49 variantes receberam o peso real em 31/08 (ver seção 4). Falta o
 **tamanho da embalagem** — a Frenet cota por peso *e* cubagem, então sem as
 dimensões a cotação continua imprecisa. **Ainda trava a homologação.**
 
-### 🔴 Bling precisa ser reconciliado
-A reestruturação da Guia e do Porta Saquinho (31/08) **apagou 16 SKUs e
-renomeou 8**. O catálogo saiu de 49 para 33 SKUs. A integração casa por SKU,
-então o mapeamento no Bling está quebrado até ser refeito.
+### 🟡 Bling remapeado, falta limpar o "Tamanho:P"
+Remapeamento concluído em 31/08: 16 variações excluídas, 8 SKUs renomeados,
+saldo e peso importados por planilha, e o **Código Integração** das 8 variações
+da Guia e do Porta Saquinho — que estava em zero e era o vínculo realmente
+quebrado — repovoado. Sincronização religada e conferida: o Bling não
+sobrescreveu nada.
+
+Sobrou a **descrição das variações**, que ainda diz `Cor:X;Tamanho:P` nesses
+dois produtos. Esse texto vai para a NF-e. Tem de ser corrigido na tela do
+Bling, não por planilha: alterar a definição da variação por importação pode
+criar variação nova em vez de renomear.
 
 ### 🟡 Bandana: 155 na loja, 104 no controle
 Sobram 51. Pode ser produção posterior ao documento ou saldo desatualizado.
@@ -71,7 +78,7 @@ nunca foram respondidos.
 | 4 | Decidir entre frete fixo de R$ 22 e cotação Frenet | Os dois estão ativos e aparecem juntos no checkout — o cliente escolhe o menor |
 | 5 | Ligar as opções soltas ao metacampo | Coleira (Cor + Tamanho) e Guia (Tamanho); sem isso não há amostra de cor nem tradução do seletor |
 | 6 | ~~Traduzir os valores de opção para o `/en`~~ | Feito nos metaobjects (Black/Brown/Caramel, S/M/L); só aparece nos produtos do item 5 depois que forem ligados |
-| 7 | Refazer o mapeamento no Bling, mapear situações e ligar status + rastreio | 16 SKUs apagados e 8 renomeados em 31/08 |
+| 7 | ~~Refazer o mapeamento no Bling~~; mapear situações e ligar status + rastreio | Remapeamento feito em 31/08; falta a última etapa da integração |
 | 8 | Conferir o enquadramento dos heros no preview | Percentuais do art direction nunca foram vistos rodando |
 | 9 | "Complete o conjunto" usa `related`, não complementares | Ela pediu produtos realmente complementares |
 
